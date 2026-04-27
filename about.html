@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
+    <title>About Us | EKF-Charity</title>
+    <!-- Font Awesome 6 (icons) & Google Font for readability -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVIGATION BAR (Red & Green theme) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="i-container" style= "background-image: url(images/logo.jpeg);"></i>
+                <div class= "logo-container">
+                <p><span>EKF</span></p>
+                <p><span class="highlight">CHARITY</span></p>
+                </div>    
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <div class="dropdown">
+                <a href="index.html" class="dropbtn" id="about-main-btn"><span>OVERVIEW</span></a>
+                </div>
+                <div class="dropdown">
+
+                    <a href="our-work.html" class="dropbtn" id="about-main-btn"><span>OUR WORK ▿</span></a>
+                <div class="dropdown-content">
+                    <a href="our-work.html#our-model">OUR MODEL</a>
+                    <a href="our-work.html#sustainability">SUSTAINABILITY</a>
+                    <a href="our-work.html#where-we-work">WHERE WE WORK</a>
+
+                </div>
+            </div>
+                <div class="dropdown">
+                <a href="impact-insights.html" class="dropbtn" id="about-main-btn"><span>IMPACT & INSIGHTS ▿</span></a>
+                <div class="dropdown-content">
+                    <a href="impact-insights.html#impact-at-a-glance">IMPACT AT A GLANCE</a>
+                    <a href="impact-insights.html#impact-by-area">IMPACT BY AREA</a>
+                    <a href="impact-insights.html#data-driven-impact">DATA-DRIVEN IMPACT</a>
+                    <a href="impact-insights.html#impact-reports">IMPACT REPORTS</a>
+                </div>
+            </div>
+                <div class="dropdown">
+                <a href="about.html" class="dropbtn active" id="about-main-btn"><span>ABOUT US ▿</span></a>
+                <div class="dropdown-content">
+                    <a href="about.html#mission-vision-01">MISSION & VISION</a>
+                    <a href="about.html#our-team-01">OUR TEAM</a>
+                    <a href="about.html#leadership-team">LEADERSHIP TEAM</a>
+                    <a href="about.html#board-of-directors">BOARD OF DIRECTORS</a>
+                    <a href="about.html#partners">PARTNERS</a>
+                </div>
+            </div>
+
+                <a class="btn-secondary" href="role.html">ROLES</a>
+                <a class="btn-primary" href="https://flutterwave.com/donate/7qypp03qs9et">DONATE</a>
+            </ul>
+            <div class="hamburger"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+<!-- Main content container -->
+
+            <section class="hero-section" id="hero">
+            <div class="hero" style="background-image: url('images/children5.jpg');">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1 class="animate-up" style="font-size: 5rem;">ABOUT US</h1>
+                    <div class="hero-buttons animate-up delay-2">
+                        <a class="btn-primary" href="#recent-impact" id="impact-at-a-glance">RECENT IMPACT →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+                <!-- Sidebar (off-canvas menu) -->
+<div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+        <div class="sidebar-logo">
+            <img src="images/logo.jpeg" alt="EK Logo">
+            <span>EK FOUNDATION</span>
+        </div>
+        <button class="close-sidebar" id="closeSidebar">&times;</button>
+    </div>
+    <ul class="sidebar-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="our-work.html">Our Work ▿</a></li>
+        <li><a href="impact-insights.html">Impact & Insights ▿</a></li>
+        <li><a href="about.html">About Us ▿</a></li>
+        <li><a href="role.html">Roles</a></li>
+        <li><a href="news-resources.html">Newsletter</a></li>
+    </ul>
+    <div class="sidebar-footer">
+        <p>📞 <a href="tel:+256751545436">Call Now</a></p>
+        <p>💬 <a href="https://wa.me/256701715505" target="_blank">WhatsApp</a></p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+</div>
+
+<!-- Overlay for when sidebar is open -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+
+        <!-- Mission & Vision (with anchor id) -->
+        <section class="about-section" id="mission-vision-011"> <!-- our mission id changed intentionally -->
+            <h2 style="font-size: 3rem; text-align: center;">Mission & Vision</h2>
+            <div class="mission-block">
+                    <strong style="font-size: 2rem;">Empowering vulnerable children, youth, women, and elderly people across Uganda through healthcare, education, livelihoods, and protection <span style="color: var(--red);">transforming poverty into resilient prosperity..</span></span></strong>
+                <p style="font-size: 1.5rem;">
+                    A leading Ugandan NGO where every vulnerable person lives a fulfilled, rewarding life with dignity and opportunity.
+                </p><span id="our-team-01"></span>
+            </div>
+        </section>
+
+        <!-- Our Team -->
+<section class="teeam-glassy">
+    <div class="teeam-bg">
+        <img src="images/ourTeam.jpg" alt="Coffee farmers at work">
+    </div>
+    <div class="teeam-overlay"></div>
+    <div class="teeam-content">
+        <h2>Our Team</h2>
+        <p>Our Uganda-based team brings together a powerful blend of deep community field operations expertise, strategic public-private teeams, human-centered design for social service delivery, rigorous research and data science, and cutting-edge digital and financial tools  all to build, deploy, and scale solutions that drive prosperity and resilience for Uganda's vulnerable communities.</p>
+        <p>We partner with the Ministries of Health, Education, and Gender, along with district governments in 22 of Uganda’s districts, who co-own our interventions and work with us to design what and how we measure impact for effective decision-making. These teeams have helped us reach over 20,000 vulnerable children, youth, women, and elderly people with our solutions across 500+ community groups, schools, and health outreach hubs, and will continue to be the cornerstone of how we approach the path to national scale in Uganda.</p>
+        <div class="hero-buttons animate-up delay-2">
+                        <a class="btn-secondary" href="role.html" style="margin-left: -1rem;" id="board-of-directors">VIEW OUR OPEN ROLES →</a>
+        </div>
+    </div>
+</section>
+       <section class="about-section">
+            <!-- Leadership Team -->
+            <div>
+                <h3>BOARD OF DIRECTORS</h3>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-img img1"></div>
+                        <h4>Mr. Kazibwe Essien</h4>
+                        <p class="title">ceo/president</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-img img2"></div>
+                        <h4>Mrs Kisaakye Eseza</h4>
+                        <p class="title">Board of Director</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-img img3"></div>
+                        <h4>Mr. Wilberforce Biziyaremye</h4>
+                        <p class="title" id="leadership-team">Board of Director</p>
+                    </div>
+                    <!-- add more as needed -->
+                </div>
+            </div>
+
+            <!-- Board of Directors -->
+            <div>
+                <h3>LEADERSHIP TEAM</h3>
+                <div class="board-grid">
+                    <div class="board-member">
+                        <div class="member-img img4"></div>
+                        <h4>Mr. Lubega Farooq</h4>
+                        <p class="title">Secretary</p>
+                    </div>
+                    <div class="board-member">
+                        <div class="member-img img5"></div>
+                        <h4>Mrs. Namukwaya Farida</h4>
+                        <p class="title">regional coodinator</p>
+                    </div>
+                    <div class="board-member">
+                        <div class="member-img img6"></div>
+                        <h4>Mr. Nsubuga Amir</h4>
+                        <p class="title">field officer</p>
+                    </div>
+                    <div class="board-member">
+                        <div class="member-img img7"></div>
+                        <h4>Mr. Sserwada Badiru</h4>
+                        <p class="title" id="partners">chairman board of trustees</p>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Our Partners -->
+        
+            <div  style="text-align: center;">
+            <h2>Our Partners</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem; color: var(--white);">
+                Partnerships are the backbone of our work. We believe sustainable impact is achieved through strong partnerships.
+            </p>
+            </div>
+
+            <div class="partner-group">
+    <h4 style="color: var(--dark-blue);">Government Partners</h4>
+    <p style="font-size: 1.2rem; margin-bottom: 2rem; color: var(--white);">We work with national and district governments to co‑design solutions for vulnerable communities.</p>
+    <ul class="partner-list">
+        <li>Ministry of Health  Policy guidance for community health and HIV/AIDS programs</li>
+        <li>Ministry of Education and Sports  School enrollment and scholastic materials for orphans and vulnerable children</li>
+        <li>Ministry of Gender, Labour and Social Development  Child protection, psychosocial support, and elderly care frameworks</li>
+        <li>Ministry of Agriculture, Animal Industry and Fisheries (MAAIF)  Food security and livelihood support coordination</li>
+        <li>District Local Governments  22 districts across Uganda implementing health, education, and livelihood programs</li>
+        <li>District Health Officers  Reproductive health and HIV/AIDS sensitization partnerships</li>
+        <li>Probation and Social Welfare Offices  Child protection case management and referrals</li>
+        <li>Community Development Departments  Local coordination of vulnerable family support services</li>
+        <li>Primary Schools & Health Centers  Service delivery points for education and healthcare access</li>
+    </ul>
+</div>
+
+<div class="partner-group">
+    <h4 style="color: var(--dark-blue);">Implementing & Research Partners</h4>
+    <p>EKFcharity collaborates with a diverse network of research institutions, NGOs, and social service providers to ensure every vulnerable family has a path to sustainable prosperity.</p>
+    <ul class="partner-list">
+        <li>Uganda NGO Bureau  Regulatory and certification partner</li>
+        <li>Makerere University  Department of Social Work & Public Health</li>
+        <li>UNICEF Uganda  Child protection and psychosocial support frameworks</li>
+        <li>World Health Organization (WHO) Uganda  Health systems strengthening and HIV/AIDS guidelines</li>
+        <li>Anonymous Hope Fund  Program funding and capacity building</li>
+        <li>Global Paint  Outreach and mindset change initiatives</li>
+        <li>Local Community-Based Organizations (CBOs)  Grassroots implementation and community trust</li>
+        <li>Village Health Teams (VHTs)  Community entry and service referral networks</li>
+    </ul>
+</div>
+
+           
+            <div class="cta">
+                <strong>Interested in partnering?</strong>
+                <a href="#contact" class="btn-primary">Get in touch</a>
+            </div>
+            </section>
+
+    <!-- Sidebar (off-canvas menu) -->
+<div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+        <div class="sidebar-logo">
+            <img src="https://res.cloudinary.com/dxd5hibh7/image/upload/v1773772410/BUDDU-RURAL_COFFEE_GROWERS_TRADERS_PROCESSORS_ASSOCIATION_LTD_bmiiyi.png" alt="Buddu Coffee Logo">
+            <span>Buddu Coffee</span>
+        </div>
+        <button class="close-sidebar" id="closeSidebar">&times;</button>
+    </div>
+    <ul class="sidebar-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="our-work.html">Our Work ▿</a></li>
+        <li><a href="impact-insights.html">Impact & Insights ▿</a></li>
+        <li><a href="about.html">About Us ▿</a></li>
+        <li><a href="role.html">Roles</a></li>
+        <li><a href="news-resources.html">Newsletter</a></li>
+    </ul>
+    <div class="sidebar-footer">
+        <p>📞 <a href="tel:+256751545436">Call Now</a></p>
+        <p>💬 <a href="https://wa.me/256701715505" target="_blank">WhatsApp</a></p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@buddururalcoffee"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+    </div>
+</div>
+
+<!-- Overlay for when sidebar is open -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<section class="split-section" style="margin: 1rem;">
+    <div class="split-container">
+        <div class="split-text">
+            <h1 style="color: var(--dark-blue);">Meet The Founder</h1>
+            <p>
+<strong>Eng. Kazibwe Essien</strong><br>
+<small style="font-style: italic;">Founder & Executive Director, EKFcharity</small><br>
+
+Eng. Kazibwe Essien founded EKFcharity (Essien Kazibwe Foundation) on 27th December 2015 with a singular vision: to see all vulnerable people live fulfilled and rewarding lives.<br><br>
+
+Born and raised in Uganda, Eng. Kazibwe witnessed firsthand the challenges faced by vulnerable children, youth, women, and elderly people in accessing basic healthcare, education, and protection. Driven by a deep sense of stewardship and community empowerment, he left a promising engineering career to build an organization that would give hope to those who need it most.<br><br>
+
+Under his leadership, EKFcharity has grown from a one‑person dream to a nationally certified NGO partnering with 22 district local governments and national ministries across Uganda. Today, the foundation reaches thousands of vulnerable families with life‑changing programs in health, education, livelihoods, child protection, and emergency relief.<br><br>
+
+Eng. Kazibwe believes that every heart deserves hope  and he continues to lead with passion, integrity, and resilience, ensuring that no vulnerable person is left behind.<br><br>
+
+"Our wish for every heart is the desire to make it so. Together, we can end hunger, improve health, educate every child, and overcome adversity  one community at a time."<br><br>
+<span style="color: var(--sky-blue);">Eng. Kazibwe Essien</span>
+</p>
+
+
+        </div>
+        <div class="split-image" style="display: transparent;">
+            <img src="images/DIRECTOR.jpg" alt="" loading="lazy">
+            <div>
+            <a href="mailto:kazibweesien11@gmail.com" class="btn-primary">
+  <i class="fas fa-envelope"></i> Email CEO
+</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- FOOTER with TOS/PP/FAQ modals, contacts, WhatsApp, other platform -->
+     <footer>
+    <div class="logo">
+        <i class="i-container" style="background-image: url(images/logo.jpeg);"></i>
+    </div>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>EKF <span style ="color: var(--red);">Charity</span><br>Kampala, Uganda</h4>
+            <div class="social-links" id="contact">
+                <a href="https://facebook.com/@ekfcharity" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com/@ekfcharity" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@ekfcharity" class="social-icon" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="tel:+256751545436" class="social-icon" target="_blank"><i class="fas fa-phone"></i></a>
+                <a href="https://wa.me/256751545436" class="social-icon" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h4>Go To</h4>
+            <a href="our-work.html"><i class="fa-solid fa-briefcase"></i> Our Work</a>
+            <a href="impact-insights.html"><i class="fa-solid fa-circle-info"></i> Impact & Insights</a>
+            <a href="#" onclick="openModal('tos')"><i class="fas fa-file-contract"></i> Terms of Service</a>
+            <a href="#" onclick="openModal('pp')"><i class="fas fa-shield"></i> Privacy Policy</a>
+        </div>
+        <div class="footer-section">
+            <h4>Our Platforms</h4>
+            <a href="https://buddu-coffee.vercel.app" target="_blank"><i class="fas fa-external-link-alt"></i> BUDDU COFFEE</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2026 ESSIEN KAZIBWE FOUNDATION.
+        <p>All rights reserved.</p>
+    </div>
+</footer>
+
+    <!-- MODALS for ToS, PP, FAQ -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+         <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/69c9298aecf7021c36680246/1jksskhmr';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+    <script src="our-work.js"></script>
+</body>
+</html>

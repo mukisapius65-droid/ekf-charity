@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
+    <title>UGANDA COUNTRY | EKF-Charity</title>
+    <!-- Font Awesome 6 (icons) & Google Font for readability -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVIGATION BAR (Red & Green theme) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="i-container" style= "background-image: url(images/logo.jpeg);"></i>
+                <div class= "logo-container">
+                <p><span>EKF</span></p>
+                <p><span class="highlight">CHARITY</span></p>
+                </div>    
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <div class="dropdown">
+                <a href="index.html" class="dropbtn" id="about-main-btn"><span>OVERVIEW</span></a>
+                </div>
+
+                <div class="dropdown">
+                    <a href="our-work.html" class="dropbtn" id="about-main-btn"><span>OUR WORK ▿</span></a>
+                    <div class="dropdown-content">
+                    <a href="our-work.html#our-model">OUR MODEL</a>
+                    <a href="our-work.html#sustainability">SUSTAINABILITY</a>
+                    <a href="our-work.html#where-we-work">WHERE WE WORK</a>
+
+                 </div>
+                </div>
+                <div class="dropdown">
+                <a href="impact-insights.html" class="dropbtn" id="about-main-btn"><span>IMPACT & INSIGHTS ▿</span></a>
+                <div class="dropdown-content">
+                    <a href="impact-insights.html#impact-at-a-glance">IMPACT AT A GLANCE</a>
+                    <a href="impact-insights.html#impact-by-area">IMPACT BY AREA</a>
+                    <a href="impact-insights.html#data-driven-impact">DATA-DRIVEN IMPACT</a>
+                    <a href="impact-insights.html#impact-reports">IMPACT REPORTS</a>
+                </div>
+            </div>
+                <div class="dropdown">
+                <a href="about.html" class="dropbtn" id="about-main-btn"><span>ABOUT US ▿</span></a>
+                <div class="dropdown-content">
+                    <a href="about.html#mission-vision-01">MISSION & VISION</a>
+                    <a href="about.html#our-team-01">OUR TEAM</a>
+                    <a href="about.html#leadership-team">LEADERSHIP TEAM</a>
+                    <a href="about.html#board-of-directors">BOARD OF DIRECTORS</a>
+                    <a href="about.html#partners">PARTNERS</a>
+                </div>
+            </div>
+
+                <a class="btn-secondary" href="role.html">ROLES</a>
+                <a class="btn-primary" href="https://flutterwave.com/donate/7qypp03qs9et">DONATE</a>
+            </ul>
+            <div class="hamburger"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT – all "pages" are sections hidden/shown via JS -->
+    <main>
+        <!-- HERO SECTION (part of Home, but visible on all pages? We'll place it inside home) -->
+
+        <section class="hero-section" id="hero">
+            <div class="hero" style="background-image: url('images/teenage.jpg');">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1 class="animate-up"><span class="yellow" style="color: chartreuse;">UGANDA COUNTRY SPOTLIGHT</span><br>Improving quality, access and equity in Uganda’s health, education, and social protection systems for vulnerable communities</h1>
+
+                </div>
+            </div>
+        </section>
+        <!-- HOME PAGE -->
+
+        <!-- Sidebar (off-canvas menu) -->
+<div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+        <div class="sidebar-logo">
+            <img src="https://res.cloudinary.com/dxd5hibh7/image/upload/v1773772410/BUDDU-RURAL_COFFEE_GROWERS_TRADERS_PROCESSORS_ASSOCIATION_LTD_bmiiyi.png" alt="Buddu Coffee Logo">
+            <span>Buddu Coffee</span>
+        </div>
+        <button class="close-sidebar" id="closeSidebar">&times;</button>
+    </div>
+    <ul class="sidebar-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="our-work.html">Our Work ▿</a></li>
+        <li><a href="impact-insights.html">Impact & Insights ▿</a></li>
+        <li><a href="about.html">About Us ▿</a></li>
+        <li><a href="role.html">Roles</a></li>
+        <li><a href="news-resources.html">Newsletter</a></li>
+    </ul>
+    <div class="sidebar-footer">
+        <p>📞 <a href="tel:+256751545436">Call Now</a></p>
+        <p>💬 <a href="https://wa.me/256701715505" target="_blank">WhatsApp</a></p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@buddururalcoffee"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+    </div>
+</div>
+
+<!-- Overlay for when sidebar is open -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div>
+           <section class="welcome-section" id="welcome-section"> <!--line 1378-->
+            <div class="welcome">
+                <div class="welcome-overlay"></div>
+                <div class="welcome-content">
+
+                    <h1 class="animate-up"><span class="yellow" style="color: chartreuse;">THE CHALLENGE WE'RE ADDRESSING</span></h1>
+
+                    <p class="animate-up"><span class="come"></span>Over the last 10 years, Uganda’s government has made strides in advancing access to healthcare, education, and social protection for vulnerable communities by supporting community‑based organizations and promoting integrated service delivery. Over 80% of Uganda’s vulnerable children, youth, women, and elderly people rely on community health centers, schools, and social welfare services as their primary source of support.</p>
+                    <p style="font-size: 1.1rem; font-weight: 300;">However, poor health outcomes, low school retention, and gaps in child protection remain amongst the highest in the region, driven by a twin challenge affecting the majority of vulnerable families: delays in accessing timely health and education information, and gaps in service delivery, quality management, and referral systems.</p>
+                </div>
+            </div>
+</div>
+        </section>
+    </div>
+    
+<section class="partnership-glassy">
+    <div class="partnership-bg">
+        <img src="images/handon.jpg" alt="Coffee farmers at work">
+    </div>
+    <div class="partnership-content">
+        <h2>Our Partnerships</h2>
+        <p>Since 2020, EKFcharity has partnered with district local governments, community‑based organizations, social workers, and vulnerable communities to improve health outcomes, education access, child protection, and quality of life for vulnerable families, where the majority of Uganda’s underserved children, youth, women, and elderly people live and rely on support services.</p>
+        <p>We partner with the Ministries of Health, Education, and Gender, along with district governments in 22 of Uganda’s most vulnerable districts, who co‑own our interventions and work with us to design what and how we measure impact for effective decision‑making. These partnerships have helped us reach over 20,000 vulnerable people with our solutions across 500+ community groups, schools, and health centers, and will continue to be the cornerstone of how we approach the path to national scale in Uganda.
+
+</p>
+    </div>
+</section>
+
+<section class="fullwidth-carousel" style="margin: 2rem;">
+<div class="carousel-header">
+        <h2 style="font-size: 2rem;">Our vision of an “end game” at scale is our district government partners and community organizations leading and sustainably financing cost‑effective innovations within Uganda’s health, education, and social protection systems.</h2>
+        <strong style="font-size: 1.1rem; color: white;">We support district governments and community groups to co‑own and co‑finance our solutions (GROW, FIELDS, PULSE), as a pathway to long‑term sustainability. Over the last several years, EKFcharity has earned increasing government recognition and buy‑in by proving its solutions can deliver impact on national priorities – such as healthcare access, school retention, child protection, and food security – and by routinely sharing data that helps them do more with their resources.</strong>
+
+    </div>
+</section>
+
+ <section class="split-section">
+    <div class="split-container">
+        <div class="split-text">
+            <h2><i class="fas fa-chart-line"></i></h2>
+            <p class="lead">Affordable fo Governments</p>
+            <p>Ugandan district governments cover 15% of the costs for the FIELDS training program (targeting 50% by 2027).</p>
+
+            
+            <h2><i class="fas fa-chart-line"></i></h2>
+            <p class="lead">Endorsed governments</p>
+            <p>EKFcharity’s model of work has been endorsed by the Ministries of Health, Education, and Gender at the national level.</p>
+            
+            
+            <h2><i class="fas fa-chart-line"></i></h2>
+            <p class="lead">Supported by government Budgets</p>
+            <p>EKFcharity’s accredited training modules on child protection, psychosocial support, HIV/AIDS sensitization, and emergency response have been incorporated into the National Community Volunteer and Social Worker Training Curricula.</p>
+        </div>
+        <div class="split-image">
+            <img src="images/health.jpg" loading="lazy">
+        </div>
+    </div>
+</section>
+
+<div class="price-section"> <!--LINE 1457-->
+    <h2><i class="fas fa-chart-simple"></i>Snapshot of Scale and Impact</h2>
+    <div class="price-cards">
+        <!-- Card 1: Ripe Fresh -->
+        <div class="price-card">
+            <div class="price-meter" data-target="20000">
+                <div class="price-value">
+                    <span class="price-number">0</span><span>+</span>
+                </div>
+                <small>vulnerable children, youth, women, and elderly people reached</small>
+                <div class="meter-bar" hidden>
+                    <div class="meter-fill-1"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2: Dried -->
+        <div class="price-card">
+            <i class="fa-thin fa-children"></i>
+            <div class="price-meter" data-target="900">
+                <div class="price-value">
+                    <span class="price-number">0</span><span>+</span>
+                </div>
+                <small>skilled community volunteers and social workers trained</small>
+                <div class="meter-bar" hidden>
+                    <div class="meter-fill-2"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3:  -->
+        <div class="price-card">
+            <i class="fa-solid fa-people-roof"></i>
+            <div class="price-meter" data-target="1100">
+                <div class="price-value">
+                    <span class="price-number">0</span><span>+</span>
+                </div>
+                <small>partner schools, health centers, and community service points</small>
+                <div class="meter-bar" hidden>
+                    <div class="meter-fill-3"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 1: Ripe Fresh -->
+        <div class="price-card">
+            <div class="price-meter" data-target="22">
+                <div class="price-value">
+                    <span class="price-number">0</span><span></span>
+                </div>
+                <small>district government partners across Uganda</small>
+                <div class="meter-bar" hidden>
+                    <div class="meter-fill-1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        </section>
+
+                <section class="hero-section" id="hero">
+            <div class="hero" style="background-image: url('images/impat-img.jpg');">
+            </div>
+                </section>
+
+                <section class="split-section">
+    <div class="split-container">
+        <div class="split-text">
+            <h2>WHERE WE WORK</h2>
+            <p class="lead">We have Ugandan roots and global ambitions</p>
+            <p><strong>GROW - </strong>Since 2015, EKFcharity has worked with district local governments and the national Ministries of Health, Education, and Gender to improve health outcomes, school enrollment, child protection, and livelihoods for vulnerable families in Uganda’s most underserved regions. Guided by a mission to reach every vulnerable child, youth, woman, and elderly person, our focus is on scaling further within Uganda while adapting our model and capitalizing on our learnings to serve marginalized communities in new geographies. We currently partner with district governments in Central, Eastern, and Western Uganda to test and adapt our solutions to support national development priorities, with ambitious plans to grow our footprint across East Africa in the coming years.
+
+</p>
+        </div>
+        <div class="split-image">
+            <img src="images/uganda.png" alt="Farmer using mobile phone in coffee garden" loading="lazy">
+        </div>
+    </div>
+</section> 
+
+<section id="Story-Esther" class="split-section">
+    <div class="split-container">
+        <div class="split-image">
+            <img src="images/Charity partnership .png" alt="Farmer using mobile phone in coffee garden" loading="lazy">
+            <div class="donate-btn">
+               <a class="btn-primary" href="https://flutterwave.com/donate/7qypp03qs9et">SPONSOR ESTHER →</a>
+            </div>
+        </div>
+        <div class="split-text">
+            <h2> A Story That Keeps Us Going</h2>
+            <p class="lead">From Lost Hope To Brighter Future</p>
+            <p>Let me share with you the story of <strong>Esther</strong> (name changed for her protection). She is a 14‑year‑old girl living in a small village in Wakiso district. When we met her, she had dropped out of school after her mother died and her father abandoned the family. She was caring for her two younger siblings, often going to bed hungry. Our team came alongside her – providing school fees and scholastic materials, enrolling her in our child protection committee, and connecting the family to a local savings group that now helps them afford food and basic needs.</p><br>
+            <p>Today, Esther is back in school, and her siblings are in good health. She told me, <strong>“I now know that God has not forgotten us.”</strong></p><br>
+            <p>This is just one of hundreds of lives touched through our work.</p>
+        </div>
+    </div>
+</section> 
+
+<section class="reports-section">
+    <div class="reports-header">
+        <h2><i class="fas fa-chart-simple"></i> Impact Reports</h2>
+        <p>You can find our quarterly and annual impact reports below, or sign up to receive these straight into your inbox.</p>
+        <form class="reports-signup" id="reportsSignup">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit"><i class="fas fa-paper-plane"></i> Subscribe</button>
+        </form>
+    </div>
+
+    <div class="reports-carousel-container">
+        <div class="reports-track" id="reportsTrack">
+            <!-- Report cards will be injected by JS -->
+        </div>
+        <div class="reports-nav">
+            <button class="reports-prev" id="reportsPrev"><i class="fas fa-chevron-left"></i></button>
+            <div class="reports-pagination" id="reportsPagination"></div>
+            <button class="reports-next" id="reportsNext"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+</section>
+
+    
+    <footer>
+    <div class="logo">
+        <i class="i-container" style="background-image: url(images/logo.jpeg);"></i>
+    </div>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>EKF Charity<BR><i class="fas fa-map-marker-alt"></i> Wakaliga, Uganda</h4>
+            <div class="social-links">
+                <a href="https://facebook.com/@ekfcharity" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com/@ekfcharity" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@ekfcharity" class="social-icon" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="tel:+256751545436" class="social-icon" target="_blank"><i class="fas fa-phone"></i></a>
+                <a href="https://wa.me/256751545436" class="social-icon" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h4>GO To</h4>
+            <a href="our-work.html"><i class="fa-solid fa-briefcase"></i> Our Work</a>
+            <a href="about.html"><i class="fa-solid fa-circle-info"></i> About Us</a>
+            <a href="#tos" id="tos" onclick="openModal('tos')"><i class="fas fa-file-contract"></i> Terms of Service</a>
+            <a href="#pp" id="pp" onclick="openModal('pp')"><i class="fas fa-shield"></i> Privacy Policy</a>
+        </div>
+        <div class="footer-section">
+            <h4>Our Platforms</h4>
+            <a href="https://buddu-coffee.vercel.app" target="_blank"><i class="fas fa-external-link-alt"></i> BUDDU COFFEE</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2026 ESSIEN KAZIBWE FOUNDATION.
+        <p>All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Fixed Glassy Button to navigate to News & Resources page -->
+<a href="news-resources.html" class="fixed-glass-btn" title="News & Resources" style="display: none;">
+    <i class="fas fa-newspaper"></i>
+</a>
+
+    <!-- MODALS for ToS, PP, FAQ -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+         <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/69c9298aecf7021c36680246/1jksskhmr';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+    <script src="our-work.js"></script>
+</body>
+    </html>

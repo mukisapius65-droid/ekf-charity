@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EKF-Charity | The Charitable Destiny Changer</title>
+    <!-- Font Awesome 6 (icons) & Google Font for readability -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVIGATION BAR (Red & Green theme) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="i-container" style= "background-image: url(images/logo.jpeg);"></i>
+                <div class= "logo-container">
+                <p><span>EKF</span></p>
+                <p><span class="highlight">CHARITY</span></p>
+                </div>    
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <div class="dropdown">
+
+                    <a href="our-work.html" class="dropbtn" id="about-main-btn"><span>OUR WORK ▿</span></a>
+                <div class="dropdown-content">
+                    <a href="our-work.html#our-model">OUR MODEL</a>
+                    <a href="our-work.html#sustainability">SUSTAINABILITY</a>
+                    <a href="our-work.html#where-we-work">WHERE WE WORK</a>
+
+                </div>
+            </div>
+                <div class="dropdown">
+                <a href="impact-insights.html" class="dropbtn" id="about-main-btn"><span>IMPACT & INSIGHTS ▿</span></a>
+                <div class="dropdown-content">
+                    <a href="impact-insights.html#impact-at-a-glance">IMPACT AT A GLANCE</a>
+                    <a href="impact-insights.html#impact-by-area">IMPACT BY AREA</a>
+                    <a href="impact-insights.html#data-driven-impact">DATA-DRIVEN IMPACT</a>
+                    <a href="impact-insights.html#impact-reports">IMPACT REPORTS</a>
+                </div>
+            </div>
+                <div class="dropdown">
+                <a href="about.html" class="dropbtn" id="about-main-btn"><span>ABOUT US ▿</span></a>
+                <div class="dropdown-content">
+                    <a href="about.html#mission-vision-01">MISSION & VISION</a>
+                    <a href="about.html#our-team-01">OUR TEAM</a>
+                    <a href="about.html#leadership-team">LEADERSHIP TEAM</a>
+                    <a href="about.html#board-of-directors">BOARD OF DIRECTORS</a>
+                    <a href="about.html#partners">PARTNERS</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href="#newsletter" class="dropbtn" id="about-main-btn"><span>NEWSLETTER</span></a>
+                </div>
+
+                <a class="btn-secondary" href="role.html">ROLES</a>
+                <a class="btn-primary" href="https://flutterwave.com/donate/7qypp03qs9et">DONATE</a>
+            </ul>
+            <div class="hamburger"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+    
+
+    <!-- MAIN CONTENT  all "pages" are sections hidden/shown via JS -->
+    <main>
+        <!-- HERO SECTION (part of Home, but visible on all pages? We'll place it inside home) -->
+
+        <section class="hero-section" id="hero">
+            <div class="hero" style="background-image: url('images/index-img.jpg');">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1 class="animate-up">Improving quality of care and better outcomes for every vulnerable family  from the youngest child to the oldest elder.</h1>
+                   <div class="hero-buttons animate-up delay-2">
+                        <a class="btn-primary" href="about.html">WHO WE'RE →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+<div>
+           <section class="welcome-section" id="welcome-section"> <!--line 1378-->
+            <div class="welcome">
+                <div class="welcome-overlay"></div>
+                <div class="welcome-content">
+                    <p class="animate-up">All vulnerable people deserve a <span>life of dignity and opportunity,</span> and<br>every community deserves a <span>sustainable path out of poverty.</span></p>
+                    <p class="partner">We partner with vulnerable families, community‑based organizations, and district local governments across Uganda to deploy affordable, scalable solutions that sustainably improve health, education, and livelihoods ensuring that the majority of children, youth, women, elderly, and marginalized groups and their families thrive.</p>
+                   <div class="welcome-buttons animate-up delay-2">
+                        <a class="btn-secondary" href="our-work.html#our-model">OUR MODEL →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <div class="blog-grid">
+    <!-- Featured blog (full height on left) -->
+    <a href="https://flutterwave.com/donate/7qypp03qs9et" class="blog-featured">
+        <div class="blog-card">
+            <img src="images/help.jpg" alt="Featured blog">
+            <div class="blog-overlay">
+                <span class="blog-sticker"> DONATE</span>
+                <h3>Intellectually disabled Children Fund</h3>
+                   <p>Every Intellectually disabled Child deserve a reason to smile.</p>
+            </div>
+        </div>
+    </a>
+
+    <!-- Right side: two columns, each with two stacked blogs -->
+    <div class="blog-columns">
+        <div class="blog-col">
+            <a href="https://flutterwave.com/donate/7qypp03qs9et" class="blog-item">
+                <div class="blog-card">
+                    <img src="images/sick.jpg" alt="Blog 1">
+                    <div class="blog-overlay">
+                        <span class="blog-sticker">DONATE</span>
+                        <h4>Cancer Fund</h4>
+                    </div>
+                </div>
+            </a>
+            <a href="https://flutterwave.com/donate/7qypp03qs9et" class="blog-item">
+                <div class="blog-card">
+                    <img src="images/eldery.jpg" alt="Blog 2">
+                    <div class="blog-overlay">
+                        <span class="blog-sticker">DONATE</span>
+                        <h4>Eldery Security Fund</h4>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="blog-col">
+            <a href="https://flutterwave.com/donate/7qypp03qs9et" class="blog-item">
+                <div class="blog-card">
+                    <img src="images/home.jpg" alt="Blog 3">
+                    <div class="blog-overlay">
+                        <span class="blog-sticker">DONATE</span>
+                        <h4>Shelter and Clothing Fund</h4>
+                    </div>
+                </div>
+            </a>
+            <a href="https://flutterwave.com/donate/7qypp03qs9et" class="blog-item">
+                <div class="blog-card">
+                    <img src="images/food.jpg" alt="Blog 4">
+                    <div class="blog-overlay">
+                        <span class="blog-sticker">DONATE</span>
+                        <h4>Disabled Children Fund</h4>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    </div>
+
+    <section class="split-section" style="border: none; background: none;">
+    <div class="split-container">
+        <div class="split-text">
+            <h2>Impact by Area</h2>
+            <p class="lead">We drive impact by <span style="color: var(--red);">designing solutions with and for</span> vulnerable children, youth, women, elderly people, and the community volunteers, local organizations, and district governments that support them  <span style="color: var(--red);">using data to improve</span> health outcomes, educational access, food security, and protection services.</p>
+            <p class="white">Specifically our solutions drive impact in three areas:</p>
+
+        </div>
+        <a class="btn-secondary" href="impact-insights.html#impact-area">VIEW AREAS OF IMPACT →</a>
+    </div>
+</section>
+    
+<section class="pulse-section" id="pulse-section">
+    <div class="pulse" id="pulse-bg" style="background-image: url('images/impat-img.jpg');">
+        <div class="team-columns">
+            <!-- Column 1 (Mission)  wider -->
+            <div class="team-column mission-column" data-bg="images/info.jpg">
+               <div class="column-overlay"></div>
+                <div class="column-content">
+                    <h3>DIGITAL EMPOWEREMENT</h3>
+                    <p class="quote">
+                        We equip vulnerable children, youth, women, and elderly people with timely information and resources to access health services, education support, and livelihood opportunities  empowering them to make informed decisions for their families
+                    </p>
+                    <a class="btn-secondary col-btn" href="grow.html">Discover GROW →</a>
+                </div>
+            </div>
+            <!-- Column 2 (Vision) -->
+            <div class="team-column vision-column" data-bg="images/trainer.jpg">
+                <div class="column-overlay"></div>
+                <div class="column-content">
+                    <h3>SKILLED,RESPECTFUL</h3>
+                    <p class="quote">
+                        We train community volunteers, local leaders, and caregivers in child protection, psychosocial support, HIV/AIDS sensitization, and post‑harvest food handling  ensuring vulnerable groups receive dignified, quality care
+                    </p>
+                    <a class="btn-secondary col-btn" href="fields.html">Discover FIELDS →</a>
+                </div>
+            </div>
+            <!-- Column 3 (Values) -->
+            <div class="team-column values-column" data-bg="https://res.cloudinary.com/dxd5hibh7/image/upload/v1773681238/IMG-20260316-WA0012_pb2olm.jpg">
+                <div class="column-overlay"></div>
+                <div class="column-content">
+                    <h3>DATA-DRIVEN IMPROVEMENT</h3>
+                    <p class="quote">
+                        We harness real‑time community data and research to improve health outcomes, school enrollment, food security, and environmental conservation  measuring what matters for vulnerable families
+                    </p>
+                    <a class="btn-secondary col-btn" href="pulse.html">Discover PULSE →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+             <section class="about-section" id="mission-vision" style="justify-content: center; align-items: center; text-align: center;">
+            <h2>Impact at a Glance</h2>
+            <div class="mission-block">
+                    <p>We drive impact by empowering vulnerable children, youth, women, elderly people, and the community-based organizations and local governments who serve them. We rely on real‑time data, human insights, and a growing body of evidence to expand access to <span style="color: var(--red);">healthcare, improve educational outcomes, strengthen food security,</span> and build the resilience of vulnerable communities in different regions of Uganda.</p>
+                     
+            </div>
+
+                     <a class="btn-secondary" href="impact-insights.html#impact-at-a-glance" style="margin-top: 2rem;">OUR IMPACT →</a>
+
+             <div class="price-section"> <!--LINE 1457-->
+    <h2><i class="fas fa-chart-simple"></i>VULNERABLE COMMUNITIES WE SERVE</h2>
+    <div class="price-cards">
+        <!-- Card 1: -->
+        <div class="price-card">
+            <div class="price-meter" data-target="20000">
+                <div class="price-value">
+                    <span class="price-number">0</span><span>+</span>
+                </div>
+                <small>children served</small>
+                <div class="meter-bar" hidden>
+                    <div class="meter-fill-1"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2:-->
+        <div class="price-card">
+            <i class="fa-thin fa-children"></i>
+            <div class="price-meter" data-target="5500">
+                <div class="price-value">
+                    <span class="price-number">0</span><span>+</span>
+                </div>
+                <small>youth & women served</small>
+                <div class="meter-bar" hidden>
+                    <div class="meter-fill-2"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3:  -->
+        <div class="price-card">
+            <i class="fa-solid fa-people-roof"></i>
+            <div class="price-meter" data-target="3550">
+                <div class="price-value">
+                    <span class="price-number">0</span><span>+</span>
+                </div>
+                <small>elderly & families served</small>
+                <div class="meter-bar" hidden>
+                    <div class="meter-fill-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </section>
+
+         <!-- WHERE WE WORK -->
+<section class="partnership-glassy">
+    <div class="partnership-bg">
+        <img src="images/where.jpg" alt="Where We Work" loading="lazy">
+    </div>
+    <div class="partnership-overlay"></div>
+    <div class="partnership-content">
+        <h2>WHERE WE WORK</h2>
+        <p>Our mission is to transform hope, health, and resilience for all vulnerable children, youth, women, elderly people, and marginalized communities across Uganda.</p>
+        <p>We partner with government agencies (Ministries of Health, Education, Gender, and Agriculture), district local governments, and community‑based organizations to support vulnerable families in accessing healthcare, education, livelihood opportunities, child protection services, and emergency relief across diverse contexts and geographies. Our roots are in Uganda, where we have strengthened community well‑being in partnership with 22 district local governments and national ministries. More recently, our impact has attracted interest from neighboring countries, including Rwanda and Ethiopia, paving the way for future scale‑up of our community‑led development model across Africa.</p>
+        <div class="hero-buttons animate-up delay-2">
+                        <a class="btn-secondary col-btn" href="role.html#positions" style="margin-left: -1rem;">VIEW OUR OPEN ROLES →</a>
+        </div>
+    </div>
+</section>
+
+            <section class="about-section" id="mission-vision">
+            <h2>News and <span style="color: var(--sky-blue);">Resources</span></h2>
+            <div class="mission-block">
+                <p>Our latest impact reports, training toolkits, stories from the field, and other <span style="color: var(--red);">updates from across our programs</span> including health, education, child protection, livelihoods, HIV/AIDS awareness, environmental conservation, and emergency relief.</p>
+            </div>
+            </section>
+
+            <div class="blog-grid">
+    <!-- Featured blog (full height on left) -->
+    <a href="images/volunteers.jpg" class="blog-featured">
+        <div class="blog-card">
+            <img src="images/volunteers.jpg" alt="Featured blog">
+            <div class="blog-overlay">
+                <span class="blog-sticker"><i class="fa-solid fa-blog"></i> BLOG</span>
+                <h3>How Our volunteers Are Transforming Lives for Vulnerable Families</h3>
+                <p>Discover how families and community groups are gaining from our platform to access health information, educational resources, and livelihood opportunities with the help of volunteers..</p>
+            </div>
+        </div>
+    </a>
+
+    <!-- Right side: two columns, each with two stacked blogs -->
+    <div class="blog-columns">
+        <div class="blog-col">
+            <a href="images/yell.jpg" class="blog-item">
+                <div class="blog-card">
+                    <img src="images/yell.jpg" alt="Blog 1">
+                    <div class="blog-overlay">
+                        <span class="blog-sticker"><i class="fa-solid fa-blog"></i> BLOG</span>
+                        <h4>Health Care and Food Provision Support: Best Practices for Nutrition and Health</h4>
+                    </div>
+                </div>
+            </a>
+            <a href="images/mother-img.jpg" class="blog-item">
+                <div class="blog-card">
+                    <img src="images/mother-img.jpg" alt="Blog 2">
+                    <div class="blog-overlay">
+                        <span class="blog-sticker"><i class="fa-solid fa-blog"></i> BLOG</span>
+                        <h4>Improving Single Mothers' Livelihoods</h4>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="blog-col">
+            <a href="images/give.jpg" class="blog-item">
+                <div class="blog-card">
+                    <img src="images/give.jpg" alt="Blog 3">
+                    <div class="blog-overlay">
+                       <span class="blog-sticker"><i class="fa-solid fa-blog"></i> BLOG</span>
+                        <h4>Clothing and Shelter Support</h4>
+                    </div>
+                </div>
+            </a>
+            <a href="images/love.jpg" class="blog-item">
+                <div class="blog-card">
+                    <img src="images/love.jpg" alt="Blog 4">
+                    <div class="blog-overlay">
+                        <span class="blog-sticker"><i class="fa-solid fa-blog"></i> BLOG</span>
+                        <h4>Masaka Outreaach Program</h4><span id="newsletter"></span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    </div>
+
+    <section class="about-section" id="mission-vision">
+         <section class="newsletter-section">
+    <div class="newsletter-container">
+        <div class="newsletter-header">
+            <h2><i class="fas fa-envelope-open-text"></i> Sign up to our <span>Newsletter</span></h2>
+            <p>Get inspiring stories, program updates, and ways to help delivered to your inbox.</p>
+        </div>
+        <form id="newsletterForm" class="newsletter-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="firstname"><i class="fas fa-user"></i> First Name *</label>
+                    <input type="text" id="firstname" name="firstname" placeholder="JOHN" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastname"><i class="fas fa-user"></i> Last Name *</label>
+                    <input type="text" id="lastname" name="lastname" placeholder="LUKKA" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email"><i class="fas fa-envelope"></i> Email *</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="organization"><i class="fas fa-building"></i> Organization</label>
+                    <input type="text" id="organization" name="organization" placeholder="Cooperative / Company / Individual">
+                </div>
+                <div class="form-group">
+                    <label for="country"><i class="fas fa-globe"></i> Country</label>
+                    <input type="text" id="country" name="country" placeholder="Uganda" value="Uganda">
+                </div>
+            </div>
+            <button type="submit" class="btn-newsletter">Subscribe <i class="fas fa-paper-plane"></i></button>
+            <p class="form-note">We respect your privacy. Unsubscribe anytime.</p>
+        </form>
+        <div id="formSuccess" class="form-success" style="display: none;">
+            <i class="fas fa-check-circle"></i> Thank you for subscribing! You'll hear from us soon.
+        </div>
+    </div>
+</section>
+
+      <section class="featured" id="featured">
+    <h2>Featured in</h2>
+    <div class="marquee">
+        <div class="marquee-track">
+            <!-- First set -->
+            <span class="media-item">
+                <img src="images/ntv-img.jpg" alt="NTV" loading="lazy">
+            </span>
+            <span class="media-item">
+                <img src="images/nbs-img.png" alt="NBS" loading="lazy">
+            </span>
+            <span class="media-item">
+                <img src="images/bukedde-img.png" alt="Bukedde" loading="lazy">
+            </span>
+            <span class="media-item">
+                <img src="images/salt-img.jpg" alt="Salt" loading="lazy">
+            </span>
+            <span class="media-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/200px-Google_2015_logo.svg.png" alt="Google" loading="lazy">
+            </span>
+            <span class="media-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/200px-YouTube_Logo_2017.svg.png" alt="YouTube" loading="lazy">
+            </span>
+            <span class="media-item">
+                <img src="images/ubc.png" alt="UBC" loading="lazy">
+            </span>
+            <span class="media-item">
+                <img src="images/daily-monitor-img.jpg" alt="Daily Monitor" loading="lazy">
+            </span>
+            <span class="media-item">
+                <img src="images/bbc-image.png" alt="BBC" loading="lazy">
+            </span>
+            <!-- Duplicate set for seamless loop -->
+            <span class="media-item">
+                <img src="images/ntv-img.jpg" alt="NTV" loading="lazy">
+            </span>
+            <span class="media-item">
+                <img src="images/nbs-img.png" alt="NBS" loading="lazy">
+            </span>
+            <span class="media-item">
+                <img src="images/bukedde-img.png" alt="Bukedde" loading="lazy">
+            </span>
+            <span class="media-item">
+                <img src="images/salt-img.jpg" alt="Salt" loading="lazy">
+            </span>
+            <span class="media-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/200px-Google_2015_logo.svg.png" alt="Google" loading="lazy">
+            </span>
+            <span class="media-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/200px-YouTube_Logo_2017.svg.png" alt="YouTube" loading="lazy">
+            </span>
+            <span class="media-item">
+                <img src="images/ubc.png" alt="UBC" loading="lazy">
+            </span>
+            <span class="media-item">
+                <img src="images/daily-monitor-img.jpg" alt="Daily Monitor" loading="lazy">
+            </span>
+            <span class="media-item">
+                <img src="images/bbc-image.png" alt="BBC" loading="lazy">
+            </span>
+        </div>
+    </div>
+</section>
+
+        </section>
+
+
+        <!-- SIGNUP PAGE -->
+        <section id="signup" class="page" style="display: none;">
+            <div class="form-container">
+                <p style="color:#2E7D32;"><i class="fas fa-user-plus"></i> Join BUDDU RURAL COFFEE GROWERS, TRADERS & PROCESSORS COOPERATIVE</P>
+                <form id="signupForm">
+                    <label><i class="fas fa-user"></i> Full name</label>
+                    <input type="text" placeholder="Enter Full Name" required>
+
+                    <label><i class="fas fa-phone"></i> Phone (for WhatsApp)</label>
+                    <input type="tel" placeholder="+256 7XX XXX XXX" required>
+
+                    <label><i class="fas fa-tag"></i> I am a</label>
+                    <select required>
+                        <option value="">Select role</option>
+                        <option value="farmer">Farmer</option>
+                        <option value="trader">Trader</option>
+                        <option value="processor">Processor</option>
+                    </select>
+
+                    <label><i class="fas fa-envelope"></i> Email (optional)</label>
+                    <input type="email" placeholder="you@example.com">
+
+                    <label><i class="fas fa-lock"></i> Password</label>
+                    <input type="password" placeholder="********" required>
+
+                    <button type="submit" class="btn-primary btn-block">Register <i class="fas fa-check"></i></button>
+                </form>
+                <p class="legal-note">By joining you agree to our <a href="#" onclick="openModal('tos')">Terms</a> and <a href="#" onclick="openModal('pp')">Privacy</a>.</p>
+            </div>
+        </section>
+       <!-- learn roles right here--->
+    </main>
+
+<!-- Sidebar (off-canvas menu) -->
+<div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+        <div class="sidebar-logo">
+            <img src="images/logo.jpeg" alt="ekf Logo">
+            <span>EKF-CHARITY</span>
+        </div>
+        <button class="close-sidebar" id="closeSidebar">&times;</button>
+    </div>
+    <ul class="sidebar-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="our-work.html">Our Work ▿</a></li>
+        <li><a href="impact-insights.html">Impact & Insights ▿</a></li>
+        <li><a href="about.html">About Us ▿</a></li>
+        <li><a href="role.html">Roles</a></li>
+        <li><a href="#newsletter">Newsletter</a></li>
+    </ul>
+    <div class="sidebar-footer">
+        <p>📞 <a href="tel:+256751545436">Call Now</a></p>
+        <p>💬 <a href="https://wa.me/256701715505" target="_blank">WhatsApp</a></p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@ekfcharity"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+    </div>
+</div>
+
+<!-- Overlay for when sidebar is open -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    
+    <footer>
+    <div class="logo">
+        <i class="i-container" style="background-image: url(images/logo.jpeg);"></i>
+    </div>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>EKF Charity<BR> Kampala, Uganda</h4>
+            <div class="social-links">
+                <a href="https://facebook.com/@ekfcharity" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com/@ekfcharity" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@ekfcharity" class="social-icon" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="tel:+256751545436" class="social-icon" target="_blank"><i class="fas fa-phone"></i></a>
+                <a href="https://wa.me/256751545436" class="social-icon" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h4>GO To</h4>
+            <a href="our-work.html"><i class="fa-solid fa-briefcase"></i> Our Work</a>
+            <a href="about.html"><i class="fa-solid fa-circle-info"></i> About Us</a>
+            <a href="#tos" id="tos" onclick="openModal('tos')"><i class="fas fa-file-contract"></i> Terms of Service</a>
+            <a href="#pp" id="pp" onclick="openModal('pp')"><i class="fas fa-shield"></i> Privacy Policy</a>
+        </div>
+        <div class="footer-section">
+            <h4>Our Platforms</h4>
+            <a href="https://buddu-coffee.vercel.app" target="_blank"><i class="fas fa-external-link-alt"></i> BUDDU COFFEE</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2026 ESSIEN KAZIBWE FOUNDATION.
+        <p>All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Fixed Glassy Button to navigate to News & Resources page -->
+<a href="news-resources.html" class="fixed-glass-btn" title="News & Resources" style="display: none;">
+    <i class="fas fa-newspaper"></i>
+</a>
+
+    <!-- MODALS for ToS, PP, FAQ -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+         <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/69c9298aecf7021c36680246/1jksskhmr';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+    <script src="script.js"></script>
+</body>
+    </html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viewport Animation – CSS + JS</title>
+  <style>
+    /* Just for demo spacing and visual clarity */
+    body {
+      font-family: system-ui, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background: #f0f2f5;
+    }
+
+    .spacer {
+      height: 100vh;  /* pushes content down to force scrolling */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #e9ecef;
+      margin: 0 -2rem;
+      font-size: 1.2rem;
+      color: #495057;
+    }
+
+    /* The element we want to animate */
+    .animated-card {
+      background: white;
+      border-radius: 24px;
+      padding: 2rem;
+      max-width: 500px;
+      margin: 4rem auto;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      text-align: center;
+      
+      /* Initially hidden (opacity 0, moved down) */
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    /* When this class is added by JS, element fades & slides into place */
+    .animated-card.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* You can also use keyframes animation instead of transition */
+    /* 
+    .animated-card {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    .animated-card.visible {
+      animation: slideFade 0.6s forwards;
+    }
+    @keyframes slideFade {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    */
+  </style>
+</head>
+<body>
+
+  <div class="spacer">
+    ↓ Scroll down to see the animation ↓
+  </div>
+
+  <div class="animated-card" id="myCard">
+    <h2>✨ Hello! I'm animated ✨</h2>
+    <p>This card fades in and slides up when it reaches the viewport.</p>
+    <p><strong>Pure CSS animation</strong> – triggered by JavaScript detection.</p>
+  </div>
+
+  <div style="height: 100vh;"></div> <!-- extra scroll space -->
+
+  <script>
+    // Intersection Observer: detects when the element enters viewport
+    const card = document.getElementById('myCard');
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          // Once animated, you can stop observing to save resources:
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.3  // trigger when 30% of element is visible
+    });
+    
+    observer.observe(card);
+  </script>
+</body>
+</html>

@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
+    <title>GROW | EKF-Charity</title>
+    <!-- Font Awesome 6 (icons) & Google Font for readability -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVIGATION BAR (Red & Green theme) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="i-container" style= "background-image: url(images/logo.jpeg);"></i>
+                <div class= "logo-container">
+                <p><span>EKF</span></p>
+                <p><span class="highlight">CHARITY</span></p>
+                </div>    
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <div class="dropdown">
+                <a href="index.html" class="dropbtn" id="about-main-btn"><span>OVERVIEW</span></a>
+                </div>
+
+                <div class="dropdown">
+                    <a href="our-work.html" class="dropbtn" id="about-main-btn"><span>OUR WORK ▿</span></a>
+                    <div class="dropdown-content">
+                    <a href="our-work.html#our-model">OUR MODEL</a>
+                    <a href="our-work.html#sustainability">SUSTAINABILITY</a>
+                    <a href="our-work.html#where-we-work">WHERE WE WORK</a>
+
+                 </div>
+                </div>
+                <div class="dropdown">
+                <a href="impact-insights.html" class="dropbtn" id="about-main-btn"><span>IMPACT & INSIGHTS ▿</span></a>
+                <div class="dropdown-content">
+                    <a href="impact-insights.html#impact-at-a-glance">IMPACT AT A GLANCE</a>
+                    <a href="impact-insights.html#impact-by-area">IMPACT BY AREA</a>
+                    <a href="impact-insights.html#data-driven-impact">DATA-DRIVEN IMPACT</a>
+                    <a href="impact-insights.html#impact-reports">IMPACT REPORTS</a>
+                </div>
+            </div>
+                <div class="dropdown">
+                <a href="about.html" class="dropbtn" id="about-main-btn"><span>ABOUT US ▿</span></a>
+                <div class="dropdown-content">
+                    <a href="about.html#mission-vision-01">MISSION & VISION</a>
+                    <a href="about.html#our-team-01">OUR TEAM</a>
+                    <a href="about.html#leadership-team">LEADERSHIP TEAM</a>
+                    <a href="about.html#board-of-directors">BOARD OF DIRECTORS</a>
+                    <a href="about.html#partners">PARTNERS</a>
+                </div>
+            </div>
+
+                <a class="btn-secondary" href="role.html">ROLES</a>
+                <a class="btn-primary" href="https://flutterwave.com/donate/7qypp03qs9et">DONATE</a>
+            </ul>
+            <div class="hamburger"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT – all "pages" are sections hidden/shown via JS -->
+    <main>
+        <!-- HERO SECTION (part of Home, but visible on all pages? We'll place it inside home) -->
+
+        <section class="about-section" id="our-team">
+            <div class="our-team" style="background-image: url('images/working.jpg');">
+                <div class="our-team-overlay"></div>
+                <div class="our-team-content">
+                    <p class="animate-up"><span class="team"></span>Empowering community volunteers to deliver quality care and support</p>
+                        
+                <a class="btn-primary" href="#fields-intro">FIELDS Deep Dive</a>
+
+                </div>
+            </div>
+        </section>
+        <!-- HOME PAGE -->
+
+        <!-- Sidebar (off-canvas menu) -->
+<div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+        <div class="sidebar-logo">
+            <img src="images/logo.jpeg">
+            <span>EK FOUNATION</span>
+        </div>
+        <button class="close-sidebar" id="closeSidebar">&times;</button>
+    </div>
+    <ul class="sidebar-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="our-work.html">Our Work ▿</a></li>
+        <li><a href="impact-insights.html">Impact & Insights ▿</a></li>
+        <li><a href="about.html">About Us ▿</a></li>
+        <li><a href="role.html">Roles</a></li>
+        <li><a href="news-resources.html">Newsletter</a></li>
+    </ul>
+    <div class="sidebar-footer">
+        <p>📞 <a href="tel:+256751545436">Call Now</a></p>
+        <p>💬 <a href="https://wa.me/256701715505" target="_blank">WhatsApp</a></p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@buddururalcoffee"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+    </div>
+</div>
+
+<!-- Overlay for when sidebar is open -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+ <section class="split-section" style="margin: 1rem;">
+    <div class="split-container">
+        <div class="split-text">
+            <h2 style="color: var(--red);">CHALLENGE WE'RE ADDRESSING</h2>
+            <p class="lead">A skills‑building solution to close gaps in child protection, psychosocial support, and emergency response.</p>
+            <p><strong></strong>A key driver of vulnerability is that community volunteers and social workers often lack the training and confidence to handle complex cases – from child abuse to mental health crises. In Uganda, skill gaps lead to inconsistent care, missed protections, and burnout. Empowering frontline workers with practical, hands‑on training is critical: <strong>over 80% of volunteers report feeling unprepared for child protection cases</strong> before FIELDS.</p>
+            <a class="btn-primary" href="https://flutterwave.com/donate/7qypp03qs9et">OUR MODEL</a>
+        </div>
+        <div class="split-image">
+            <div class="linsights-interactive">
+    <div class="linsights-background">
+    </div>
+</div>
+        </div>
+    </div>
+</section> 
+
+
+           <section class="insights-section">
+    <h2>HOW FIELDS WORKS</h2>
+    <p>FIELDS is a structured training and quality assurance platform that builds the capacity of community volunteers, social workers, and local leaders through simulation‑based learning, continuous assessment, and certification.</p>
+
+    <div class="insights-interactive">
+        <div class="insights-background">
+            <!-- Replace with your own image (dashboard, laptop, etc.) -->
+            <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Dashboard insights" loading="lazy">
+        </div>
+    </div>
+</section>    
+
+     <div class="price-section"> <!--LINE 1457-->
+    <h2><i class="fas fa-chart-simple"></i>Snapshot of Scale and Impact</h2>
+    <div class="price-cards">
+        <!-- Card 1: Ripe Fresh -->
+        <div class="price-card">
+            <div class="price-meter" data-target="1250">
+                <div class="price-value">
+                    <span class="price-number">0</span><span>+</span>
+                </div>
+                <small>volunteers & social workers trained</small>
+                <div class="meter-bar" hidden>
+                    <div class="meter-fill-1"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2: Dried -->
+        <div class="price-card">
+            <i class="fa-thin fa-children"></i>
+            <div class="price-meter" data-target="85">
+                <div class="price-value">
+                    <span class="price-number">0</span><span>%</span>
+                </div>
+                <small>improvement in child protection knowledge after training</small>
+                <div class="meter-bar" hidden>
+                    <div class="meter-fill-2"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3: Pre‑processed -->
+        <div class="price-card">
+            <i class="fa-solid fa-people-roof"></i>
+            <div class="price-meter" data-target="500">
+                <div class="price-value">
+                    <span class="price-number">0</span><span>+</span>
+                </div>
+                <small>child protection cases handled with confidence</small>
+                <div class="meter-bar" hidden>
+                    <div class="meter-fill-3"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 1: Ripe Fresh -->
+        <div class="price-card">
+            <div class="price-meter" data-target="22">
+                <div class="price-value">
+                    <span class="price-number">0</span><span></span>
+                </div>
+                <small>districts with active FIELDS trainers</small>
+                <div class="meter-bar" hidden>
+                    <div class="meter-fill-1"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 1: Ripe Fresh -->
+        <div class="price-card">
+            <div class="price-meter" data-target="70">
+                <div class="price-value">
+                    <span class="price-number">0</span><span>%</span>
+                </div>
+                <small>reduction in volunteer burnout after training</small>
+                <div class="meter-bar" hidden>
+                    <div class="meter-fill-1"></div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<section class="digital-tools-section">
+  <div class="tools-container">
+    <h2 class="tools-heading">A suite of training tools that builds confidence and competence for frontline workers.</h2>
+
+    <!-- Tool 1: Image Left, Text Right -->
+    <div class="tool-row">
+      <div class="tool-image">
+        <img src="https://res.cloudinary.com/dxd5hibh7/image/upload/v1773411792/messages.jpg" alt="Sequence of messages">
+      </div>
+      <div class="tool-text">
+        <h3>Modular, context‑specific curriculum</h3>
+        <p>Covers child protection protocols, psychosocial first aid, HIV sensitization, livelihood coaching, and emergency response – tailored to Uganda’s community realities.</p>
+      </div>
+    </div>
+
+    <!-- Tool 2: Text Left, Image Right -->
+    <div class="tool-row reverse">
+      <div class="tool-text">
+        <h3>Skill gap tracking & certification</h3>
+        <p>Our platform tracks each volunteer’s progress, identifies knowledge gaps, and issues verifiable certificates – ensuring quality and accountability.</p>
+      </div>
+      <div class="tool-image">
+        <img src="https://res.cloudinary.com/dxd5hibh7/image/upload/v1773411792/helpdesk.jpg" alt="AI helpdesk">
+      </div>
+    </div>
+
+    <!-- Tool 3: Image Left, Text Right -->
+    <div class="tool-row">
+      <div class="tool-image">
+        <img src="https://res.cloudinary.com/dxd5hibh7/image/upload/v1773411792/data.jpg" alt="Data infrastructure">
+      </div>
+      <div class="tool-text">
+        <h3>Real‑time supervisor dashboards</h3>
+        <p>District managers can monitor volunteer performance, case outcomes, and training completion – enabling data‑driven support and resource allocation.</p>
+        <a href="#" class="more-data-link">More Data →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCALABILITY & SUSTAINABILITY -->
+<section class="digital-tools-section">
+  <div class="tools-container">
+    <h2 class="tools-heading">FIELDS is designed to be scaled and sustained within government social protection systems.</h2>
+    <p>From the beginning, we designed FIELDS to have low delivery costs – using local trainers, mobile‑first content, and peer learning – so that district governments can integrate it into their annual budgets. Today, <strong>15% of FIELDS operating costs are covered by district local governments</strong>, and we partner with the Ministry of Gender and social welfare departments to embed training into national child protection frameworks.
+</p>
+</div>
+</section>
+
+<!-- COST & PARTNERSHIP CARDS -->
+<section class="split-section" style="margin: 1rem;">
+    <div class="split-container">
+        
+        <div class="split-image">
+            <img src="images/partner.jpg" loading="lazy">
+        </div>
+
+        <div class="split-text">
+            <h2><i class="fas fa-hand-holding-heart"></i></h2>
+            <p class="lead">Free for community volunteers</p>
+            <p>All training materials and certification are provided at no cost to volunteers.</p>
+
+            
+            <h2><i class="fas fa-coins"></i></h2>
+            <p class="lead">Low cost per trainee</p>
+            <p>Under $12 per volunteer for full curriculum and certification.</p>
+            
+            
+            <h2><i class="fas fa-landmark"></i></h2>
+            <p class="lead">Affordable For Governments</p>
+            <p>15% of running costs covered by district governments – target 50% by 2027.</p>
+
+            <h2><i class="fas fa-globe"></i></h2>
+            <p class="lead">Scalable to new districts</p>
+            <p>Active in 22 districts; partnerships with 3 national ministries (Gender, Health, Education).</p>
+
+            <div class="split-cta">
+                <!--❌❌❌-->
+                <a  id="where-we-work" class="btn-newsletter" href="sustainability-of-services.html">SUSTAINABILITY OF SERVICES →</a>
+  
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- STORIES FROM THE FIELD (FIELDS testimonials) -->
+<section class="fullwidth-carousel" id="stories-carousel">
+  <div class="carousel-header">
+    <h2>Stories from the Field</h2>
+    <p><strong style="font-size: 1.1rem; color: var(--white);">Real volunteers, real impact – hear from those who transformed their communities.</strong></p>
+  </div>
+
+  <div class="carousel-wrapper">
+    <button class="carousel-nav prev"><i class="fas fa-chevron-left"></i></button>
+    <div class="carousel-container">
+      <div class="carousel-track" id="storiesTrack">
+        <!-- Story 1 – Vulnerable child -->
+        <div class="carousel-card" style="background-image: url('https://res.cloudinary.com/dxd5hibh7/image/upload/v1773411792/child-story.jpg');">
+          <div class="card-overlay">
+            <div class="card-content">
+              <h3>Stories from the field</h3>
+              <p><strong>Grace, Community Volunteer, Masaka</strong><br>“Before FIELDS, I didn’t know how to talk to a child who had experienced trauma. Now I have the skills to listen, comfort, and refer them to the right support. It changed everything.”</p>
+              <button class="card-btn story-btn" data-story="sarah">Read Grace's story →</button>
+            </div>
+          </div>
+        </div>
+        <!-- Story 2 – Vulnerable youth -->
+        <div class="carousel-card" style="background-image: url('https://res.cloudinary.com/dxd5hibh7/image/upload/v1773411792/youth-story.jpg');">
+          <div class="card-overlay">
+            <div class="card-content">
+              <h3>Stories from the field</h3>
+              <p><strong>John, Social Worker, Jinja</strong><br>"The training on psychosocial first aid helped me prevent a suicide in my community. I will forever be grateful.”</p>
+              <button class="card-btn story-btn" data-story="james">Read John's story →</button>
+            </div>
+          </div>
+        </div>
+        <!-- Story 3 – Vulnerable woman / mother -->
+        <div class="carousel-card" style="background-image: url('https://res.cloudinary.com/dxd5hibh7/image/upload/v1773411792/woman-story.jpg');">
+          <div class="card-overlay">
+            <div class="card-content">
+              <h3>Stories from the field</h3>
+              <p><strong>Grace, Community Volunteer, Masaka</strong><br>“Before FIELDS, I didn’t know how to talk to a child who had experienced trauma. Now I have the skills to listen, comfort, and refer them to the right support. It changed everything.”</p>
+              <button class="card-btn story-btn" data-story="grace">Read Grace's story →</button>
+            </div>
+          </div>
+        </div>
+        <!-- Story 4 – Elderly person -->
+        <div class="carousel-card" style="background-image: url('https://res.cloudinary.com/dxd5hibh7/image/upload/v1773411792/youth-story.jpg');">
+          <div class="card-overlay">
+            <div class="card-content">
+              <h3>Stories from the field</h3>
+              <p><strong>John, Social Worker, Jinja</strong><br>"The training on psychosocial first aid helped me prevent a suicide in my community. I will forever be grateful.”</p>
+              <button class="card-btn story-btn" data-story="james">Read John's story →</button>
+            </div>
+          </div>
+        </div>
+        <!-- Story 5 – Vulnerable family -->
+        <div class="carousel-card" style="background-image: url('https://res.cloudinary.com/dxd5hibh7/image/upload/v1773411792/family-story.jpg');">
+          <div class="card-overlay">
+            <div class="card-content">
+              <h3>Stories from the field</h3>
+              <p><strong>Amina, Elderly Caretaker, Gulu</strong><br>“I learned how to spot signs of neglect and report them safely. Now the elderly in my village receive regular visits and support.”</p>
+              <button class="card-btn story-btn" data-story="amina">Read Amina's story →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-nav next"><i class="fas fa-chevron-right"></i></button>
+  </div>
+</section>
+
+<!-- FIELDS IN ACTION (split with video) -->
+<section class="split-story-section">
+  <div class="split-story-container">
+    <!-- Left side: Text content -->
+    <div class="split-story-text">
+      <h2>FIELDS <span>in action</span></h2>
+      <div class="story-quote">
+        <i class="fas fa-quote-left"></i>
+        <p>When 12‑year‑old Sarah was withdrawn and missing school, her mother reached out to a community volunteer trained by FIELDS.</p>
+      </div>
+      <p class="story-outcome">The volunteer knew exactly what to do.</p>
+      <p class="story-detail">Using psychosocial support techniques learned in FIELDS, the volunteer built trust, identified signs of abuse, and made a confidential referral to child protection services. Sarah is now back in school and receiving counseling – and the volunteer has become a local child protection champion.</p>
+      <a href="#" class="story-cta">Read the full story →</a>
+    </div>
+
+    <!-- Right side: Video -->
+    <div class="split-story-video">
+      <div class="video-wrapper">
+        <video poster="https://res.cloudinary.com/dxd5hibh7/image/upload/v1773411792/grow-video-poster.jpg" controls>
+          <source src="https://your-server.com/videos/grow-in-action.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <!-- Or embed a YouTube/Vimeo video -->
+        <!-- <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe> -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH DEEP DIVES (FIELDS‑themed) -->
+<section class="research-deepdives">
+  <div class="research-header">
+    <h2>Research and <span>Technical Deep Dives</span></h2>
+    <p>Exploring how training data and field insights improve volunteer effectiveness and child protection outcomes.</p>
+  </div>
+
+  <div class="research-grid-container">
+    <div class="research-grid" id="researchGrid">
+      <!-- Cards will be injected via JavaScript -->
+    </div>
+
+    <!-- Pagination Controls -->
+    <div class="pagination-controls">
+      <button class="page-arrow prev" id="prevPage"><i class="fas fa-chevron-left"></i></button>
+      <div class="page-numbers" id="pageNumbers"></div>
+      <button class="page-arrow next" id="nextPage"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </div>
+</section>
+
+    
+    <!-- FOOTER with TOS/PP/FAQ modals, contacts, WhatsApp, other platform -->
+     <footer>
+    <div class="logo">
+        <i class="i-container" style="background-image: url(images/logo.jpeg);"></i>
+    </div>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>BUDDU COFFEE<BR><i class="fas fa-map-marker-alt"></i> Butega, Uganda</h4>
+            <div class="social-links">
+                <a href="https://facebook.com/budducoffee" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com/budducoffee" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@buddururalcoffee" class="social-icon" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="tel:+256751545436" class="social-icon" target="_blank"><i class="fas fa-phone"></i></a>
+                <a href="https://wa.me/256751545436" class="social-icon" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h4>GO To</h4>
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="about.html"><i class="fa-solid fa-circle-info"></i> About Us</a>
+            <a href="#" onclick="openModal('tos')"><i class="fas fa-file-contract"></i> Terms of Service</a>
+            <a href="#" onclick="openModal('pp')"><i class="fas fa-shield"></i> Privacy Policy</a>
+        </div>
+        <div class="footer-section">
+            <h4>Our Platforms</h4>
+            <a href="https://ekfoundation.org" target="_blank"><i class="fas fa-external-link-alt"></i> EK FOUNDATION</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2026 BUDDU RURAL COFFEE GROWERS, TRADERS & PROCESSORS ASSOCIATION.
+        <p>All rights reserved.</p>
+    </div>
+</footer>
+
+
+    <!-- MODALS for ToS, PP, FAQ -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script>
+// ===== PAGINATED RESEARCH DEEP DIVES =====
+document.addEventListener('DOMContentLoaded', function() {
+  // Data for cards (from user's example, adapted to EKF context)
+  const researchData = [
+    {
+      image: "https://res.cloudinary.com/dxd5hibh7/image/upload/v1773411792/image-3.jpg",
+      title: "How to digitally screen for risk",
+      description: "Using AI and SMS patterns to identify vulnerable families who need urgent support.",
+      tag: "Technical Resource"
+    },
+    {
+      image: "https://res.cloudinary.com/dxd5hibh7/image/upload/v1773411792/unnamed-44.jpg",
+      title: "Can we develop predictive models that provide insight on child protection risk from conversational patterns?",
+      description: "Exploring how natural language processing can flag early signs of neglect or abuse.",
+      tag: "Technical Resource"
+    },
+    {
+      image: "https://res.cloudinary.com/dxd5hibh7/image/upload/v1773411792/unnamed-34.jpg",
+      title: "Measuring ‘felt’ respect: Can AI models understand sentiment in conversational data?",
+      description: "Assessing how vulnerable families perceive the quality of support they receive.",
+      tag: "Technical Resource"
+    },
+    {
+      image: "https://res.cloudinary.com/dxd5hibh7/image/upload/v1773411792/3B9A9266.jpg",
+      title: "Climate Change and Health: What GROW tells us about how millions of Ugandan families experience extreme weather",
+      description: "Leveraging real‑time data to understand climate impacts on food security and health.",
+      tag: "Technical Resource"
+    },
+    {
+      image: "https://res.cloudinary.com/dxd5hibh7/image/upload/v1773411792/health-history.jpg",
+      title: "How do we capture and use the health history of vulnerable families via SMS?",
+      description: "Building longitudinal records to improve continuity of care and referrals.",
+      tag: "Technical Resource"
+    },
+    {
+      image: "https://res.cloudinary.com/dxd5hibh7/image/upload/v1773411792/volunteers.jpg",
+      title: "Volunteer training impact: Closing skill gaps in child protection",
+      description: "Data from FIELDS shows how targeted training improves community support.",
+      tag: "Research Brief"
+    }
+  ];
+
+  let currentPage = 1;
+  const cardsPerPage = 3; // Change to 4 or 6 as desired
+  const totalPages = Math.ceil(researchData.length / cardsPerPage);
+
+  const gridContainer = document.getElementById('researchGrid');
+  const pageNumbersContainer = document.getElementById('pageNumbers');
+  const prevBtn = document.getElementById('prevPage');
+  const nextBtn = document.getElementById('nextPage');
+
+  function renderGrid() {
+    const start = (currentPage - 1) * cardsPerPage;
+    const end = start + cardsPerPage;
+    const pageData = researchData.slice(start, end);
+
+    let html = '';
+    pageData.forEach(item => {
+      html += `
+        <div class="research-card">
+          <img class="card-image" src="${item.image}" alt="${item.title}" loading="lazy">
+          <div class="card-content">
+            <span class="card-tag">${item.tag}</span>
+            <div class="card-title">${item.title}</div>
+            <div class="card-description">${item.description}</div>
+          </div>
+        </div>
+      `;
+    });
+    gridContainer.innerHTML = html;
+    updatePaginationButtons();
+  }
+
+  function updatePaginationButtons() {
+    // Generate page number buttons
+    let pagesHtml = '';
+    for (let i = 1; i <= totalPages; i++) {
+      pagesHtml += `<div class="page-number ${i === currentPage ? 'active' : ''}" data-page="${i}">${i}</div>`;
+    }
+    pageNumbersContainer.innerHTML = pagesHtml;
+
+    // Attach click events to page numbers
+    document.querySelectorAll('.page-number').forEach(btn => {
+      btn.addEventListener('click', () => {
+        currentPage = parseInt(btn.dataset.page);
+        renderGrid();
+      });
+    });
+
+    // Enable/disable arrows
+    prevBtn.disabled = currentPage === 1;
+    nextBtn.disabled = currentPage === totalPages;
+    prevBtn.style.opacity = currentPage === 1 ? '0.5' : '1';
+    nextBtn.style.opacity = currentPage === totalPages ? '0.5' : '1';
+  }
+
+  prevBtn.addEventListener('click', () => {
+    if (currentPage > 1) {
+      currentPage--;
+      renderGrid();
+    }
+  });
+
+  nextBtn.addEventListener('click', () => {
+    if (currentPage < totalPages) {
+      currentPage++;
+      renderGrid();
+    }
+  });
+
+  renderGrid();
+});
+
+
+// ===== CAROUSEL WITH AUTO-PLAY ON THRESHOLD 0.3 =====
+document.addEventListener('DOMContentLoaded', function() {
+  const track = document.getElementById('storiesTrack');
+  const prevBtn = document.querySelector('#stories-carousel .prev');
+  const nextBtn = document.querySelector('#stories-carousel .next');
+  const carouselContainer = document.querySelector('#stories-carousel .carousel-container');
+
+  if (!track || !prevBtn || !nextBtn) return;
+
+  let currentIndex = 0;
+  let autoPlayInterval = null;
+  let isPlaying = false;
+  const totalCards = track.children.length;
+  const cardWidth = track.children[0]?.offsetWidth || 0;
+  let visible = false;
+
+  // Function to update carousel position
+  function updateCarousel() {
+    const containerWidth = carouselContainer.offsetWidth;
+    const cardWidthFull = track.children[0]?.offsetWidth || containerWidth;
+    const newTransform = -currentIndex * cardWidthFull;
+    track.style.transform = `translateX(${newTransform}px)`;
+  }
+
+  // Auto-play function
+  function startAutoPlay() {
+    if (autoPlayInterval) clearInterval(autoPlayInterval);
+    autoPlayInterval = setInterval(() => {
+      if (!visible) return;
+      currentIndex = (currentIndex + 1) % totalCards;
+      updateCarousel();
+    }, 5000); // change slide every 5 seconds
+    isPlaying = true;
+  }
+
+  function stopAutoPlay() {
+    if (autoPlayInterval) {
+      clearInterval(autoPlayInterval);
+      autoPlayInterval = null;
+    }
+    isPlaying = false;
+  }
+
+  // Intersection Observer – start when 30% of carousel is visible
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        visible = true;
+        if (!isPlaying) startAutoPlay();
+      } else {
+        visible = false;
+        // Optional: stop when out of view? We'll keep playing but won't advance if not visible.
+        // Actually we'll just pause to save resources.
+        stopAutoPlay();
+      }
+    });
+  }, { threshold: 0.3 });
+
+  const carouselSection = document.getElementById('stories-carousel');
+  if (carouselSection) observer.observe(carouselSection);
+
+  // Manual navigation – pause auto-play temporarily, then restart after 5 sec
+  function manualNavigate(direction) {
+    stopAutoPlay();
+    if (direction === 'next') {
+      currentIndex = (currentIndex + 1) % totalCards;
+    } else if (direction === 'prev') {
+      currentIndex = (currentIndex - 1 + totalCards) % totalCards;
+    }
+    updateCarousel();
+    // Restart auto-play after 5 seconds of inactivity
+    setTimeout(() => {
+      if (visible && !isPlaying) startAutoPlay();
+    }, 5000);
+  }
+
+  prevBtn.addEventListener('click', () => manualNavigate('prev'));
+  nextBtn.addEventListener('click', () => manualNavigate('next'));
+
+  // Handle window resize
+  window.addEventListener('resize', () => {
+    updateCarousel();
+  });
+
+  // Optional: button click to open full story (you can link to a modal or new page)
+  document.querySelectorAll('.story-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const story = btn.getAttribute('data-story');
+      // Replace with your actual story page or modal
+      alert(`Opening story for ${story} – you can link to a detailed page.`);
+      // window.location.href = `/stories/${story}.html`;
+    });
+  });
+});
+
+
+    </script>
+
+       <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/69c9298aecf7021c36680246/1jksskhmr';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+    <script src="our-work.js"></script>
+</body>
+    </html>

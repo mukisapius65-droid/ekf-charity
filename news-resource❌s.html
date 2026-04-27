@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
+    <title>BUDDU RURAL COFFEE GROWERS, TRADERS AND PROCESSORS ASSOCIATION</title>
+    <!-- Font Awesome 6 (icons) & Google Font for readability -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVIGATION BAR (Red & Green theme) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="i-container" style= "background-image: url(https://res.cloudinary.com/dxd5hibh7/image/upload/v1773772410/BUDDU-RURAL_COFFEE_GROWERS_TRADERS_PROCESSORS_ASSOCIATION_LTD_bmiiyi.png);"></i>
+                <div class= "logo-container">
+                <p><span>BUDDU</span></p>
+                <p><span class="highlight">COFFEE</span></p>
+                </div>    
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <div class="dropdown">
+                <a href="index.html" class="dropbtn" id="about-main-btn"><span>HOME</span></a>
+                </div>
+                <div class="dropdown">
+                <a href="our-work.html" class="dropbtn" id="about-main-btn"><span>OUR WORK ▿</span></a>
+                <div class="dropdown-content">
+                    <a href="our-work.html#our-model">OUR MODEL</a>
+                    <a href="our-work.html#sustainability">SUSTAINABILITY</a>
+                    <a href="our-work.html#where-we-work">WHERE WE WORK</a>
+
+                </div>
+            </div>
+                <div class="dropdown">
+                <a href="impact-insights.html" class="dropbtn" id="about-main-btn"><span>IMPACT & INSIGHTS ▿</span></a>
+                <div class="dropdown-content">
+                    <a href="impact-insights.html#impact-at-a-glance">IMPACT AT A GLANCE</a>
+                    <a href="impact-insights.html#impact-by-area">IMPACT BY AREA</a>
+                    <a href="impact-insights.html#data-driven-impact">DATA-DRIVEN IMPACT</a>
+                    <a href="impact-insights.html#impact-reports">IMPACT REPORTS</a>
+                </div>
+            </div>
+                <div class="dropdown">
+                <a href="about.html" class="dropbtn" id="about-main-btn"><span>ABOUT US ▿</span></a>
+                <div class="dropdown-content">
+                    <a href="about.html#mission-vision-01">MISSION & VISION</a>
+                    <a href="about.html#our-team-01">OUR TEAM</a>
+                    <a href="about.html#leadership-team">LEADERSHIP TEAM</a>
+                    <a href="about.html#board-of-directors">BOARD OF DIRECTORS</a>
+                    <a href="about.html#partners">PARTNERS</a>
+                </div>
+            </div>
+                <li data-page="home" c
+                lass="active" style= "display:none"><i class="fas fa-home"></i> <span>Home</span></li>
+                <li data-page="dashboard" title= "Preview Your Networth" style= "display:none"><i class="fas fa-chart-line"></i> <span>Dashboard</span></li>
+                <li data-page="signup" title= "Join Our Cooperative" style= "display:none"><i class="fas fa-user-plus"></i> <span>Signup</span></li>
+                <li data-page="settings" title= "Configure Notifications And Font-size" style= "display:none"><i class="fas fa-cog"></i> <span>Settings</span></li>
+                <li data-page="profile" title= "View And Edit Profile" style= "display:none"><i class="fas fa-id-card"></i> <span>Profile</span></li>
+                <a class="btn-secondary" href="role.html">ROLES</a>
+                <a class="btn-primary" href="#newsletter">NEWSLETTER</a>
+            </ul>
+            <!-- Role tabs (Farmer/Trader/Processor) integrated in nav for quick access -->
+            <div class="role-tabs" style= "display:none">
+                <button class="role-btn active" data-role="farmer"><i class="fas fa-tractor"></i> Farmer</button>
+                <button class="role-btn" data-role="trader"><i class="fas fa-handshake"></i> Trader</button>
+                <button class="role-btn" data-role="processor"><i class="fas fa-industry"></i> Processor</button>
+            </div>
+            <div class="hamburger"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+<!-- Main content container -->
+    <div class="about-container" id="about-section">
+        <div class="about-hero">
+        <h1>News and Resources</h1><span id="mission-vision-01"></span> <!-- our mission place here for jump fit-->
+    </div>
+
+        <section class="about-section" id="mission-vision">
+            <h2 style="font-size: 5rem; margin-top: 2.2rem; color: black;">News and <span class="green">Resources</span></h2>
+            <div class="mission-block">
+                <p style="font-size: 1.5rem;">
+                    Our latest research, toolkits, stories from the field, and other updates from across the organization.
+                </p>
+            </div>
+
+            <div class="blog-grid">
+    <!-- Featured blog (full height on left) -->
+    <a href="https://res.cloudinary.com/dxd5hibh7/image/upload/v1773411792/coffeeCherriesHero_luwmcz.png" class="blog-featured">
+        <div class="blog-card">
+            <img src="https://res.cloudinary.com/dxd5hibh7/image/upload/v1773411792/coffeeCherriesHero_luwmcz.png" alt="Featured blog">
+            <div class="blog-overlay">
+                <span class="blog-sticker">📷 PHOTO</span>
+                <h3>How Digital Tools Are Transforming Coffee Farming</h3>
+                <p>Discover how farmers are using our platform to increase yields...</p>
+            </div>
+        </div>
+    </a>
+
+    <!-- Right side: two columns, each with two stacked blogs -->
+    <div class="blog-columns">
+        <div class="blog-col">
+            <a href="https://images.unsplash.com/photo-1559526324-593bc073d938?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="blog-item">
+                <div class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1559526324-593bc073d938?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Blog 1">
+                    <div class="blog-overlay">
+                        <span class="blog-sticker">📷 PHOTO</span>
+                        <h4>Drying Coffee: Best Practices</h4>
+                    </div>
+                </div>
+            </a>
+            <a href="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="blog-item">
+                <div class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Blog 2">
+                    <div class="blog-overlay">
+                        <span class="blog-sticker">📷 PHOTO</span>
+                        <h4>Sustainable Coffee Farm Management</h4>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="blog-col">
+            <a href="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="blog-item">
+                <div class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Blog 3">
+                    <div class="blog-overlay">
+                        <span class="blog-sticker">📷 PHOTO</span>
+                        <h4>Processing Beans for Export Quality</h4>
+                    </div>
+                </div>
+            </a>
+            <a href="https://res.cloudinary.com/dxd5hibh7/image/upload/v1773411792/coffeeCherriesHero_luwmcz.png" class="blog-item">
+                <div class="blog-card">
+                    <img src="https://res.cloudinary.com/dxd5hibh7/image/upload/v1773411792/coffeeCherriesHero_luwmcz.png" alt="Blog 4">
+                    <div class="blog-overlay">
+                        <span class="blog-sticker">📷 PHOTO</span>
+                        <h4>Market Trends for Ugandan Coffee</h4>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    </div>
+
+            <div class="blog-grid">
+    <!-- Featured blog (full height on left) -->
+    <a href="/blog/featured-post" class="blog-featured">
+        <div class="blog-card">
+            <img src="https://res.cloudinary.com/dxd5hibh7/image/upload/v1773411792/coffeeCherriesHero_luwmcz.png" alt="Featured blog">
+            <div class="blog-overlay">
+                <span class="blog-sticker">📰 BLOG</span>
+                <h3>How Digital Tools Are Transforming Coffee Farming</h3>
+                <p>Discover how farmers are using our platform to increase yields...</p>
+            </div>
+        </div>
+    </a>
+
+    <!-- Right side: two columns, each with two stacked blogs -->
+    <div class="blog-columns">
+        <div class="blog-col">
+            <a href="/blog/post-1" class="blog-item">
+                <div class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1559526324-593bc073d938?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Blog 1">
+                    <div class="blog-overlay">
+                        <span class="blog-sticker">📰 BLOG</span>
+                        <h4>Drying Coffee: Best Practices</h4>
+                    </div>
+                </div>
+            </a>
+            <a href="/blog/post-2" class="blog-item">
+                <div class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Blog 2">
+                    <div class="blog-overlay">
+                        <span class="blog-sticker">📰 BLOG</span>
+                        <h4>Sustainable Coffee Farm Management</h4>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="blog-col">
+            <a href="/blog/post-3" class="blog-item">
+                <div class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Blog 3">
+                    <div class="blog-overlay">
+                        <span class="blog-sticker">📰 BLOG</span>
+                        <h4>Processing Beans for Export Quality</h4>
+                    </div>
+                </div>
+            </a>
+            <a href="/blog/post-4" class="blog-item">
+                <div class="blog-card">
+                    <img src="https://res.cloudinary.com/dxd5hibh7/image/upload/v1773411792/coffeeCherriesHero_luwmcz.png" alt="Blog 4">
+                    <div class="blog-overlay">
+                        <span class="blog-sticker">📰 BLOG</span>
+                        <h4>Market Trends for Ugandan Coffee</h4>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    </div>
+
+         <section class="newsletter-section">
+    <div class="newsletter-container">
+        <div class="newsletter-header">
+            <h2><i class="fas fa-envelope-open-text"></i> Sign up to our Newsletter</h2>
+            <p>Stay connected with the Buddu coffee community. Receive market prices, training invites, policy updates, and inspiring stories from coffee farmers across Uganda – straight to your inbox.</p>
+        </div>
+        <form id="newsletterForm" class="newsletter-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="firstname"><i class="fas fa-user"></i> First Name *</label>
+                    <input type="text" id="firstname" name="firstname" placeholder="John" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastname"><i class="fas fa-user"></i> Last Name *</label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Doe" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email"><i class="fas fa-envelope"></i> Email *</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="organization"><i class="fas fa-building"></i> Organization</label>
+                    <input type="text" id="organization" name="organization" placeholder="Cooperative / Company / Individual">
+                </div>
+                <div class="form-group">
+                    <label for="country"><i class="fas fa-globe"></i> Country</label>
+                    <input type="text" id="country" name="country" placeholder="Uganda" value="Uganda">
+                </div>
+            </div>
+            <button type="submit" class="btn-newsletter">Subscribe <i class="fas fa-paper-plane"></i></button>
+            <p class="form-note">We respect your privacy. Unsubscribe anytime.</p>
+        </form>
+        <div id="formSuccess" class="form-success" style="display: none;">
+            <i class="fas fa-check-circle"></i> Thank you for subscribing! You'll hear from us soon.
+        </div>
+    </div>
+</section>
+
+      <section class="featured" id="featured">
+    <h2>Featured in</h2>
+    <div class="marquee">
+        <div class="marquee-track">
+            <!-- First set -->
+            <span class="media-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/NTV_Uganda_2024_logo.png/200px-NTV_Uganda_2024_logo.png" alt="NTV" loading="lazy">
+            </span>
+            <span class="media-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/NBS_TV_Uganda_logo.png/200px-NBS_TV_Uganda_logo.png" alt="NBS" loading="lazy">
+            </span>
+            <span class="media-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Bukedde_Newspaper_Logo.png/200px-Bukedde_Newspaper_Logo.png" alt="Bukedde" loading="lazy">
+            </span>
+            <span class="media-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Salt_Media_Logo.png/200px-Salt_Media_Logo.png" alt="Salt" loading="lazy">
+            </span>
+            <span class="media-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/200px-Google_2015_logo.svg.png" alt="Google" loading="lazy">
+            </span>
+            <span class="media-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/200px-YouTube_Logo_2017.svg.png" alt="YouTube" loading="lazy">
+            </span>
+            <span class="media-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/UBC_Logo.png/200px-UBC_Logo.png" alt="UBC" loading="lazy">
+            </span>
+            <span class="media-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Daily_Monitor_logo.svg/200px-Daily_Monitor_logo.svg.png" alt="Daily Monitor" loading="lazy">
+            </span>
+            <span class="media-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/BBC_Logo_2021.svg/200px-BBC_Logo_2021.svg.png" alt="BBC" loading="lazy">
+            </span>
+            <!-- Duplicate set for seamless loop -->
+            <span class="media-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/NTV_Uganda_2024_logo.png/200px-NTV_Uganda_2024_logo.png" alt="NTV" loading="lazy">
+            </span>
+            <span class="media-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/NBS_TV_Uganda_logo.png/200px-NBS_TV_Uganda_logo.png" alt="NBS" loading="lazy">
+            </span>
+            <span class="media-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Bukedde_Newspaper_Logo.png/200px-Bukedde_Newspaper_Logo.png" alt="Bukedde" loading="lazy">
+            </span>
+            <span class="media-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Salt_Media_Logo.png/200px-Salt_Media_Logo.png" alt="Salt" loading="lazy">
+            </span>
+            <span class="media-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/200px-Google_2015_logo.svg.png" alt="Google" loading="lazy">
+            </span>
+            <span class="media-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/200px-YouTube_Logo_2017.svg.png" alt="YouTube" loading="lazy">
+            </span>
+            <span class="media-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/UBC_Logo.png/200px-UBC_Logo.png" alt="UBC" loading="lazy">
+            </span>
+            <span class="media-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Daily_Monitor_logo.svg/200px-Daily_Monitor_logo.svg.png" alt="Daily Monitor" loading="lazy">
+            </span>
+            <span class="media-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/BBC_Logo_2021.svg/200px-BBC_Logo_2021.svg.png" alt="BBC" loading="lazy">
+            </span>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER with TOS/PP/FAQ modals, contacts, WhatsApp, other platform -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>BUDDU COFFEE</h4>
+                <p><i class="fas fa-map-marker-alt"></i>  Butega, Uganda</p>
+                <p><a href="tel:+256751545436"><i class="fas fa-phone"></i>  Call Now</a></p>
+                <p><a href="https://wa.me/256700123456" target="_blank"><i class="fab fa-whatsapp"></i>  WhatsApp</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Info</h4>
+                <a href="#" onclick="openModal('tos')"><i class="fas fa-file-contract"></i> Terms of Service</a>
+                <a href="#" onclick="openModal('pp')"><i class="fas fa-shield"></i> Privacy Policy</a>
+                <a href="#" onclick="openModal('faq')"><i class="fas fa-question-circle"></i> FAQs</a>
+            </div>
+            <div class="footer-section">
+                <h4>Our other platform</h4>
+                                <a href="https://ekfoundation.org" target="_blank"><i class="fas fa-external-link-alt"></i> EK FOUNDATION</a>
+                <a href="https://pfg-chapati.vercel.app" target="_blank"><i class="fas fa-external-link-alt"></i> PFG</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 BUDDU RURAL COFFEE GROWERS, TRADERS & PROCESSORS ASSOCIATION.
+            <p>All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- MODALS for ToS, PP, FAQ -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+            
+    <script src="script.js"></script>
+</body>
+</html>

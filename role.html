@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
+    <title>ROLES | EKF-Charity</title>
+    <!-- Font Awesome 6 (icons) & Google Font for readability -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVIGATION BAR (Red & Green theme) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="i-container" style= "background-image: url(images/logo.jpeg);"></i>
+                <div class= "logo-container">
+                <p><span>EKF</span></p>
+                <p><span class="highlight">CHARITY</span></p>
+                </div>    
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <div class="dropdown">
+                <a href="index.html" class="dropbtn" id="about-main-btn"><span>OVERVIEW</span></a>
+                </div>
+
+                <div class="dropdown">
+                    <a href="our-work.html" class="dropbtn" id="about-main-btn"><span>OUR WORK ▿</span></a>
+                    <div class="dropdown-content">
+                    <a href="our-work.html#our-model">OUR MODEL</a>
+                    <a href="our-work.html#sustainability">SUSTAINABILITY</a>
+                    <a href="our-work.html#where-we-work">WHERE WE WORK</a>
+
+                 </div>
+                </div>
+                <div class="dropdown">
+                <a href="impact-insights.html" class="dropbtn" id="about-main-btn"><span>IMPACT & INSIGHTS ▿</span></a>
+                <div class="dropdown-content">
+                    <a href="impact-insights.html#impact-at-a-glance">IMPACT AT A GLANCE</a>
+                    <a href="impact-insights.html#impact-by-area">IMPACT BY AREA</a>
+                    <a href="impact-insights.html#data-driven-impact">DATA-DRIVEN IMPACT</a>
+                    <a href="impact-insights.html#impact-reports">IMPACT REPORTS</a>
+                </div>
+            </div>
+                <div class="dropdown">
+                <a href="about.html" class="dropbtn" id="about-main-btn"><span>ABOUT US ▿</span></a>
+                <div class="dropdown-content">
+                    <a href="about.html#mission-vision-01">MISSION & VISION</a>
+                    <a href="about.html#our-team-01">OUR TEAM</a>
+                    <a href="about.html#leadership-team">LEADERSHIP TEAM</a>
+                    <a href="about.html#board-of-directors">BOARD OF DIRECTORS</a>
+                    <a href="about.html#partners">PARTNERS</a>
+                </div>
+            </div>
+
+                <a class="btn-secondary" href="#">VOLUNTEER</a>
+                <a class="btn-primary" href="https://flutterwave.com/donate/7qypp03qs9et">DONATE</a>
+            </ul>
+            <div class="hamburger"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT – all "pages" are sections hidden/shown via JS -->
+    <main>
+        <!-- HERO SECTION (part of Home, but visible on all pages? We'll place it inside home) -->
+
+        <section class="about-section" id="our-team">
+            <div class="our-team" style="background-image: url('images/ourTeam.jpg');">
+                <div class="our-team-overlay"></div>
+                <div class="our-team-content">
+                    <p class="animate-up"><span class="team"></span>Roles at<br>EK Foundation</p>
+                       <p style="font-size: 1rem;">Our mission is to improve health, education, and livelihoods for all vulnerable children, youth, women, and elderly people – and we rely on a diverse set of skills to strengthen, scale, and sustain the solutions that support them: community outreach and psychosocial support, child protection and case management, HIV/AIDS sensitization and reproductive health education, livelihood training and income‑generating activities, environmental conservation, emergency relief coordination, data collection and impact tracking, and government and community partnerships.</p> 
+                 <span   id="positions"></span>
+
+                </div>
+            </div>
+        </section>
+        <!-- HOME PAGE -->
+
+        <!-- Sidebar (off-canvas menu) -->
+<div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+        <div class="sidebar-logo">
+            <img src="logo.jpeg">
+            <span>EKF Charity</span>
+        </div>
+        <button class="close-sidebar" id="closeSidebar">&times;</button>
+    </div>
+    <ul class="sidebar-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="our-work.html">Our Work ▿</a></li>
+        <li><a href="impact-insights.html">Impact & Insights ▿</a></li>
+        <li><a href="about.html">About Us ▿</a></li>
+        <li><a href="role.html">Roles</a></li>
+        <li><a href="index.html#newsletter">Newsletter</a></li>
+    </ul>
+    <div class="sidebar-footer">
+        <p>📞 <a href="tel:+256751545436">Call Now</a></p>
+        <p>💬 <a href="https://wa.me/256701715505" target="_blank">WhatsApp</a></p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@buddururalcoffee"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+    </div>
+</div>
+
+<!-- Overlay for when sidebar is open -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<section class="split-section" style="border: none; background: none;">
+    <div class="split-container">
+        <div class="split-text">
+            <h2 style="color: var(--white);">Available positions</h2>
+            <p class="lead">EKFcharity is an equal opportunity employer. We evaluate qualified applicants without regard to race, colour, religion, sex, sexual orientation, gender identity, national origin, disability, veteran status, or any other legally protected characteristic.</p>
+            <p class="white">We currently have open positions. Please check back regularly or sign up for our newsletter to be notified when new roles are posted.</p>
+
+        </div>
+        <div class="split-image" style="display: transparent;">
+        </div>
+    </div>
+</section>
+
+<section class="split-section" id="impact-by-area" style="border: none; background: none;">
+    <div class="split-container">
+        <div class="split-text">
+            <h2 style="color: var(--white);">Product Research Manager</h2>
+            <p class="lead">Deadline: 28th April 2026</p>
+            <p class="white">The Product Research Manager will play a leadership role in shaping how EKFcharity evaluates interventions across the full lifecycle – from early experimentation and iteration to scale and long‑term sustainability and impact. Working closely with Programs, Monitoring & Evaluation, Data & Analytics, Technology, and Community Partnerships teams, the role will focus on understanding how, why, and for whom interventions work – with particular attention to context, equity, and impact on vulnerable children, youth, women, elderly, and marginalized communities.</p>
+        <div>
+            <a class="btn-secondary" href="#">APPLY →</a>
+        </div>
+        </div>
+        <div class="split-image" style="display: transparent;">
+        </div>
+    </div>
+</section>
+
+<section class="partnership-glassy">
+    <div class="partnership-bg">
+        <img src="images/handon.jpg" alt="Coffee farmers at work">
+    </div>
+    <div class="partnership-content">
+        <h2 style="color: var(--sky-blue);">Why choose<br>EKFCharity?</h2>
+        <p>We’re proud of our diverse, multidisciplinary team, and the professional development opportunities afforded to each member – from on‑the‑ground community fieldwork to national policy forums and regional conferences. At EKFcharity, you’ll have the opportunity to do work that truly matters, alongside colleagues who share your passion for giving hope and overcoming adversity. We’re looking for collaborative leaders and problem‑solvers, with a vested interest in changing outcomes for vulnerable children, youth, women, elderly people, and marginalized communities in low‑resource settings across Uganda. Hear from our colleagues working in Central, Eastern, and Western Uganda.</p>
+        <div class="hero-buttons animate-up delay-2">
+                        <a class="btn-secondary" href="#" style="margin-left: -1rem;" id="board-of-directors">Learn More →</a>
+        </div>
+    </div>
+</section>
+
+<section class="split-section" id="impact-by-area" style="border: none; background: none;">
+    <div class="split-container">
+          <div class="split-image">
+            <div class="team-member">
+                        <div class="member-img img1"></div>
+                        <h4>Grace Nakato</h4>
+                        <p class="title">Senior Programe Coodinator</p>
+                    </div>
+        </div>
+        <div class="split-text">
+            <h2 style="color: var(--white);"><i class="fas fa-quote-left"></i></h2>
+            <p class="white">The work environment at EKFcharity fosters a true sense of belonging. All staff are treated equally and respectfully, and there is a real feeling of mutual support. This feeling has been further enhanced through the year‑long leadership and community engagement training that everyone at EKFcharity took part in, in partnership with local leadership development programs. It really strengthened our skills and cohesion as a team.</p>
+
+        </div>
+    </div>
+</section>
+
+<section class="split-section" id="impact-by-area" style="border: none; background: none;">
+    <div class="split-container">
+          <div class="split-image">
+            <div class="team-member">
+                        <div class="member-img img1"></div>
+                        <h4>John Muwanguzi</h4>
+                        <p class="title">Senior Data & Monitoring Coodinator</p>
+                    </div>
+        </div>
+        <div class="split-text">
+            <h2 style="color: var(--white);"><i class="fas fa-quote-left"></i></h2>
+            <p class="white">The impact‑driven ethos of EKFcharity constantly fuels my inspiration. Within our community, the culture of inclusivity and openness to different ideas creates an environment where continuous learning thrives, backed by leadership training and professional support. It’s been amazing to engage projects across different districts of Uganda, and I’ve come to realize that every day holds the promise of enriching experiences – bringing hope to vulnerable children, youth, women, and elderly people.</p>
+
+        </div>
+    </div>
+</section>
+
+<section class="partnership-glassy">
+    <div class="partnership-bg">
+        <img src="images/volunteers.jpg" alt="Coffee farmers at work">
+    </div>
+</section>
+
+<section class="split-section" style="margin: 1rem;">
+    <div class="split-container">
+        <div class="split-text">
+            <h2 style="color: var(--red);">Ensuring Safety in the Process</h2>
+            <p class="lead">We understand the importance of safeguarding personal information and are aware of individuals who may falsely advertise job opportunities and misuse our brand. We urge you to exercise caution when sharing your personal information.</p><br>
+            <p><strong></strong>Please keep in mind:</p><br>
+            <p>All open positions with EKFcharity are posted on our official website, and link out to our verified application portal.<br>
+
+Official EKFcharity employee email addresses end with @ekfcharity.org; we will never email you from free web‑based email accounts such as Gmail, Yahoo, or Hotmail.<br>
+
+EKFcharity will never ask for money or other compensation as a term of employment, or to pay for application processing fees or for employment testing.<br>
+
+Job postings or employment applications that do not link to EKFcharity’s official website (www.ekfcharity.org) are not legitimate.</p>
+           <p><strong>If you have any concerns or questions related to a job posting you found online, please get in touch.</strong></p>
+           <a class="btn-secondary" href="#" style="margin-left: -1rem;" id="board-of-directors">CONTACT US →</a>
+        </div>
+        <div class="split-image">
+            <div class="linsights-interactive">
+    <div class="linsights-background">
+        <img src="images/health.jpg" alt="africa" loading="lazy">
+    </div>
+</div>
+        </div>
+    </div>
+</section> 
+
+    
+    <!-- FOOTER with TOS/PP/FAQ modals, contacts, WhatsApp, other platform -->
+     <footer>
+    <div class="logo">
+        <i class="i-container" style="background-image: url(images/logo.jpeg);"></i>
+    </div>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>EKF Charity<BR><i class="fas fa-map-marker-alt"></i> Wakaliga, Uganda</h4>
+            <div class="social-links">
+                <a href="https://facebook.com/@ekfcharity" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com/@ekfcharity" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@ekfcharity" class="social-icon" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="tel:+256751545436" class="social-icon" target="_blank"><i class="fas fa-phone"></i></a>
+                <a href="https://wa.me/256751545436" class="social-icon" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h4>GO To</h4>
+            <a href="our-work.html"><i class="fa-solid fa-briefcase"></i> Our Work</a>
+            <a href="about.html"><i class="fa-solid fa-circle-info"></i> About Us</a>
+            <a href="#tos" id="tos" onclick="openModal('tos')"><i class="fas fa-file-contract"></i> Terms of Service</a>
+            <a href="#pp" id="pp" onclick="openModal('pp')"><i class="fas fa-shield"></i> Privacy Policy</a>
+        </div>
+        <div class="footer-section">
+            <h4>Our Platforms</h4>
+            <a href="https://buddu-coffee.vercel.app" target="_blank"><i class="fas fa-external-link-alt"></i> BUDDU COFFEE</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2026 ESSIEN KAZIBWE FOUNDATION.
+        <p>All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Fixed Glassy Button to navigate to News & Resources page -->
+<a href="news-resources.html" class="fixed-glass-btn" title="News & Resources" style="display: none;">
+    <i class="fas fa-newspaper"></i>
+</a>
+
+    <!-- MODALS for ToS, PP, FAQ -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+         <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/69c9298aecf7021c36680246/1jksskhmr';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+    <script src="our-work.js"></script>
+</body>
+    </html>
