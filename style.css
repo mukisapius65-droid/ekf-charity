@@ -320,10 +320,21 @@ body::after {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
+.dropdown:hover .arrow-up {
+  display: inline-block;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .arrow-down {
+  display: none;
+}
 .dropdown:hover .dropbtn {
   background: var(--glass-bg);
   border-color: var(--sky-blue);
+}
+.arrow-up {
+  display: none;
 }
 
 .hamburger {
