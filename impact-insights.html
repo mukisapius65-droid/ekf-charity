@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Impact & Insights | EKF-Charity</title>
     <!-- Font Awesome 6 (icons) & Google Font for readability -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -27,7 +27,7 @@
                 </div>
                 <div class="dropdown">
 
-                    <a href="our-work.html" class="dropbtn" id="about-main-btn"><span>OUR WORK ▿</span></a>
+                    <a href="our-work.html" class="dropbtn" id="about-main-btn"><span>OUR WORK <span class="arrow-down">▿</span><span class="arrow-up">▵</span></span></a>
                 <div class="dropdown-content">
                     <a href="our-work.html#our-model">OUR MODEL</a>
                     <a href="our-work.html#sustainability">SUSTAINABILITY</a>
@@ -36,7 +36,7 @@
                 </div>
             </div>
                 <div class="dropdown">
-                <a href="impact-insights.html" class="dropbtn active" id="about-main-btn"><span>IMPACT & INSIGHTS ▿</span></a>
+                <a href="impact-insights.html" class="dropbtn active" id="about-main-btn"><span>IMPACT & INSIGHTS <span class="arrow-down">▿</span><span class="arrow-up">▵</span></span></a>
                 <div class="dropdown-content">
                     <a href="impact-insights.html#impact-at-a-glance">IMPACT AT A GLANCE</a>
                     <a href="impact-insights.html#impact-by-area">IMPACT BY AREA</a>
@@ -45,7 +45,7 @@
                 </div>
             </div>
                 <div class="dropdown">
-                <a href="about.html" class="dropbtn" id="about-main-btn"><span>ABOUT US ▿</span></a>
+                <a href="about.html" class="dropbtn" id="about-main-btn"><span>ABOUT US <span class="arrow-down">▿</span><span class="arrow-up">▵</span></span></a>
                 <div class="dropdown-content">
                     <a href="about.html#mission-vision-01">MISSION & VISION</a>
                     <a href="about.html#our-team-01">OUR TEAM</a>
@@ -71,7 +71,7 @@
                 <div class="hero-content">
                     <h1 class="animate-up">Improving health outcomes, educational achievement, and livelihood security for vulnerable children, youth, women, and elderly people.</h1>
                     <div class="hero-buttons animate-up delay-2">
-                        <a class="btn-primary" href="#recent-impact" id="impact-at-a-glance">RECENT IMPACT →</a>
+                        <a class="btn-primary" href="#impact-reports" id="impact-at-a-glance">RECENT IMPACT →</a>>
                     </div>
                 </div>
             </div>
@@ -88,9 +88,9 @@
     </div>
     <ul class="sidebar-menu">
         <li><a href="index.html">Home</a></li>
-        <li><a href="our-work.html">Our Work ▿</a></li>
-        <li><a href="impact-insights.html">Impact & Insights ▿</a></li>
-        <li><a href="about.html">About Us ▿</a></li>
+        <li><a href="our-work.html">Our Work <span class="arrow-down">▿</span><span class="arrow-up">▵</span></a></li>
+        <li><a href="impact-insights.html">Impact & Insights <span class="arrow-down">▿</span><span class="arrow-up">▵</span></a></li>
+        <li><a href="about.html">About Us <span class="arrow-down">▿</span><span class="arrow-up">▵</span></a></li>
         <li><a href="role.html">Roles</a></li>
         <li><a href="news-resources.html">Newsletter</a></li>
     </ul>
@@ -109,7 +109,7 @@
 <!-- Overlay for when sidebar is open -->
 <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
-<div>
+<div class="main">
 
              <section class="about-section" id="mission-vision" style="justify-content: center; align-items: center; text-align: center;">
             <h2>Impact at a Glance</h2>
@@ -225,7 +225,7 @@
         <section class="about-section" id="mission-vision-011"> <!-- our mission id changed intentionally -->
             <h2 style="font-size: 3.4rem;">Data-driven <span class="black">impact</span></h2>
             <div class="mission-block">
-                    <strong style="font-size: 1.1rem; margin-top: 3rem;">We combine real-time data from vulnerable families, community organizations, and service providers with deep, participatory research to help district governments, social welfare departments, and national ministries identify, monitor, and address gaps in healthcare access, school enrollment, child protection, and livelihood support.</span></strong>
+                    <p style="font-size: 1.1rem; margin-top: 3rem;">We combine real-time data from vulnerable families, community organizations, and service providers with deep, participatory research to help district governments, social welfare departments, and national ministries identify, monitor, and address gaps in healthcare access, school enrollment, child protection, and livelihood support.</span></p>
                 <p style="font-size: 1rem;">Given the complexity of vulnerable communities' needs, we field data and insights from across a family’s journey – from crisis to stability, from hunger to food security, from isolation to community connection – to monitor the connected, yet often siloed, gaps that affect well-being and resilience. The research we conduct and the data tools we co‑design with our government partners help inform better policies, improve social services, and direct limited resources to where they are most needed. We monitor our impact on outcomes through national information systems, including the Ministry of Health's district health information systems and the Ministry of Education's school management platforms.
                 </p>
             </div>
@@ -238,7 +238,7 @@
     <div class="insights-interactive">
         <div class="insights-background">
             <!-- Replace with your own image (dashboard, laptop, etc.) -->
-            <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Dashboard insights" loading="lazy">
+            <img src="images/data-clear.jpg" alt="Dashboard insights" loading="lazy">
             <div class="dots-overlay" id="dotsOverlay">
                 <div class="dot" data-question="How does healthcare access and service quality differ across districts?"></div>
                 <div class="dot" data-question="Which communities have the highest rates of child protection concerns and school dropouts?"></div>
@@ -250,51 +250,74 @@
     </div>
 </section>    
 
-        
-<section class="fullwidth-carousel" id="recent-impact">
-    <div class="carousel-header">
-        <h2>Influencing Decision-making through Research</h2>
-        <p><strong style="font-size: 1.1rem; color: var(--white); margin-top: 3rem;">Research is the backbone of how we design solutions, and our findings are guiding how district governments, community organizations, and social service providers improve health outcomes, school enrollment, child protection, and livelihood security across Uganda’s vulnerable communities.</strong></p>
-        <p style="font-size: 1rem; color: var(--white);">We rely on a mixture of participatory research approaches to understand the contextual challenges facing vulnerable children, youth, women, and elderly people: Human‑Centered Design, in‑depth interviews, and implementation research.</p>
-    </div>
 
-    <div class="carousel-wrapper">
-        <button class="carousel-nav prev"><i class="fas fa-chevron-left"></i></button>
-        <div class="carousel-container" id="carouselContainer">
-            <div class="carousel-track" id="carouselTrack">
-                <!-- Original cards (3) -->
-                <div class="carousel-card" style="background-image: url('images/impat-img.jpg');">
-                    <div class="card-overlay">
-                        <div class="card-content">
-                            <h3>Human‑Centered Design</h3>
-                            <p>We co‑create solutions with vulnerable families, community volunteers, and local leaders to ensure tools and services are intuitive, relevant, and truly meet the needs of those we serve.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-card" style="background-image: url('images/insight.jpg');">
-                    <div class="card-overlay">
-                        <div class="card-content">
-                            <h3>In‑depth Interviews</h3>
-                            <p>We listen to the lived experiences of those we serve – vulnerable families and community workers – to uncover hidden barriers and opportunities for better health, education, and livelihoods that surveys alone cannot reveal.</p>
-                            <button class="card-btn" onclick="alert('Learn more about In‑depth Interviews')" hidden>Explore more →</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-card" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&auto=format');">
-                    <div class="card-overlay">
-                        <div class="card-content">
-                            <h3>Implementation Research</h3>
-                            <p>We study how our health, education, and child protection programs work in real‑world settings – generating evidence that helps district governments and local community organizations scale what works best for vulnerable children, youth, women, and elderly people.</p>
-                            <button class="card-btn" onclick="alert('Learn more about Implementation Research')" hidden>Explore more →</button>
-                        </div>
-                    </div>
-                </div>
+
+
+<!-- STORIES FROM THE FIELD (PULSE impact stories) -->
+<section class="fullwidth-carousel" id="stories-carousel">
+  <div class="carousel-header">
+    <h2>Influencing Decision-making through Research</h2>
+    <p><strong style="font-size: 1.1rem; color: var(--white);">Research is the backbone of how we design solutions, and our findings are guiding how district governments, community organizations, and social service providers improve health outcomes, school enrollment, child protection, and livelihood security across Uganda’s vulnerable communities.</strong></p>
+    <p style="font-size: 1rem; color: var(--white);">We rely on a mixture of participatory research approaches to understand the contextual challenges facing vulnerable children, youth, women, and elderly people: Human‑Centered Design, in‑depth interviews, and implementation research.</p>
+  </div>
+
+  <div class="carousel-wrapper">
+    <button class="carousel-nav prev"><i class="fas fa-chevron-left"></i></button>
+    <div class="carousel-container">
+      <div class="carousel-track" id="storiesTrack">
+        <!-- Story 1  Vulnerable child -->
+        <div class="carousel-card" style="background-image: url('images/impat-img.jpg');">
+          <div class="card-overlay">
+            <div class="card-content">
+              <h3>Human‑Centered Design</h3>
+              <p>We co‑create solutions with vulnerable families, community volunteers, and local leaders to ensure tools and services are intuitive, relevant, and truly meet the needs of those we serve.</p>
             </div>
+          </div>
         </div>
-        <button class="carousel-nav next" id="impact-reports"><i class="fas fa-chevron-right"></i></button>
+        <!-- Story 2  Vulnerable youth -->
+        <div class="carousel-card" style="background-image: url('images/insight.jpg');">
+          <div class="card-overlay">
+            <div class="card-content">
+              <h3>In‑depth Interviews</h3>
+              <p>We listen to the lived experiences of those we serve – vulnerable families and community workers – to uncover hidden barriers and opportunities for better health, education, and livelihoods that surveys alone cannot reveal.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Story 3  Vulnerable woman / mother -->
+        <div class="carousel-card" style="background-image: url('images/children5.jpg');">
+          <div class="card-overlay">
+            <div class="card-content">
+              <h3>Implementation Research</h3>
+              <p>We study how our health, education, and child protection programs work in real‑world settings – generating evidence that helps district governments and local community organizations scale what works best for vulnerable children, youth, women, and elderly people.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Story 4  Elderly person -->
+        <div class="carousel-card" style="background-image: url('images/teenage.jpg');">
+          <div class="card-overlay">
+            <div class="card-content">
+              <h3>Human‑Centered Design</h3>
+              <p>We co‑create solutions with vulnerable families, community volunteers, and local leaders to ensure tools and services are intuitive, relevant, and truly meet the needs of those we serve.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Story 5  Vulnerable family -->
+        <div class="carousel-card" style="background-image: url('images/children5.jpg');">
+          <div class="card-overlay">
+            <div class="card-content">
+              <h3>In‑depth Interviews</h3>
+              <p>We listen to the lived experiences of those we serve – vulnerable families and community workers – to uncover hidden barriers and opportunities for better health, education, and livelihoods that surveys alone cannot reveal.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <button class="carousel-nav next"><i class="fas fa-chevron-right"></i></button>
+  </div>
 </section>
 
+
+  <span id="impact-reports"></span>
 <section class="reports-section">
     <div class="reports-header">
         <h2><i class="fas fa-chart-simple"></i> Impact Reports</h2>
@@ -360,7 +383,212 @@
             <div id="modal-body"></div>
         </div>
     </div>
-    
+
+<script>
+// ===== CAROUSEL WITH AUTO-PLAY ON THRESHOLD 0.3 =====
+document.addEventListener('DOMContentLoaded', function() {
+  const track = document.getElementById('storiesTrack');
+  const prevBtn = document.querySelector('#stories-carousel .prev');
+  const nextBtn = document.querySelector('#stories-carousel .next');
+  const carouselContainer = document.querySelector('#stories-carousel .carousel-container');
+
+  if (!track || !prevBtn || !nextBtn) return;
+
+  let currentIndex = 0;
+  let autoPlayInterval = null;
+  let isPlaying = false;
+  const totalCards = track.children.length;
+  const cardWidth = track.children[0]?.offsetWidth || 0;
+  let visible = false;
+
+  // Function to update carousel position
+  function updateCarousel() {
+    const containerWidth = carouselContainer.offsetWidth;
+    const cardWidthFull = track.children[0]?.offsetWidth || containerWidth;
+    const newTransform = -currentIndex * cardWidthFull;
+    track.style.transform = `translateX(${newTransform}px)`;
+  }
+
+  // Auto-play function
+  function startAutoPlay() {
+    if (autoPlayInterval) clearInterval(autoPlayInterval);
+    autoPlayInterval = setInterval(() => {
+      if (!visible) return;
+      currentIndex = (currentIndex + 1) % totalCards;
+      updateCarousel();
+    }, 5000); // change slide every 5 seconds
+    isPlaying = true;
+  }
+
+  function stopAutoPlay() {
+    if (autoPlayInterval) {
+      clearInterval(autoPlayInterval);
+      autoPlayInterval = null;
+    }
+    isPlaying = false;
+  }
+
+  // Intersection Observer  start when 30% of carousel is visible
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        visible = true;
+        if (!isPlaying) startAutoPlay();
+      } else {
+        visible = false;
+        // Optional: stop when out of view? We'll keep playing but won't advance if not visible.
+        // Actually we'll just pause to save resources.
+        stopAutoPlay();
+      }
+    });
+  }, { threshold: 0.3 });
+
+  const carouselSection = document.getElementById('stories-carousel');
+  if (carouselSection) observer.observe(carouselSection);
+
+  // Manual navigation  pause auto-play temporarily, then restart after 5 sec
+  function manualNavigate(direction) {
+    stopAutoPlay();
+    if (direction === 'next') {
+      currentIndex = (currentIndex + 1) % totalCards;
+    } else if (direction === 'prev') {
+      currentIndex = (currentIndex - 1 + totalCards) % totalCards;
+    }
+    updateCarousel();
+    // Restart auto-play after 5 seconds of inactivity
+    setTimeout(() => {
+      if (visible && !isPlaying) startAutoPlay();
+    }, 5000);
+  }
+
+      // Get original cards (the 3 we have)
+    const originalCards = Array.from(document.querySelectorAll('.carousel-card'));
+    const totalOriginal = originalCards.length;
+
+    // Clone first and last for infinite loop
+    const firstClone = originalCards[0].cloneNode(true);
+    const lastClone = originalCards[totalOriginal - 1].cloneNode(true);
+    track.appendChild(firstClone);
+    track.insertBefore(lastClone, originalCards[0]);
+
+    // All cards including clones
+    const allCards = Array.from(track.children);
+    const totalSlides = allCards.length;
+
+
+    let startX = 0;
+    let startTranslate = 0;
+    let isDragging = false;
+    let dragDistance = 0;
+
+      // Function to get the width of one card
+    function getCardWidth() {
+        return originalCards[0].offsetWidth;
+    }
+
+      function moveToIndex(index, withTransition = true) {
+        if (withTransition) {
+            track.style.transition = 'transform 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1)';
+        } else {
+            track.style.transition = 'none';
+        }
+        const offset = -index * getCardWidth();
+        track.style.transform = `translateX(${offset}px)`;
+        currentIndex = index;
+
+        // After transition, if at clone, jump to real card without transition
+        if (withTransition) {
+            setTimeout(() => {
+                if (currentIndex === 0) {
+                    // at first clone, jump to last original
+                    moveToIndex(totalOriginal, false);
+                } else if (currentIndex === totalSlides - 1) {
+                    // at last clone, jump to first original
+                    moveToIndex(1, false);
+                }
+            }, 400);
+        }
+    }
+  
+    // Navigation functions
+    function nextSlide() {
+        moveToIndex(currentIndex + 1);
+    }
+    function prevSlide() {
+        moveToIndex(currentIndex - 1);
+    }
+      // ----- Drag / Swipe -----
+    function onDragStart(e) {
+        e.preventDefault();
+        isDragging = true;
+        startX = e.type === 'mousedown' ? e.pageX : e.touches[0].pageX;
+        startTranslate = currentIndex * getCardWidth();
+        track.style.transition = 'none';
+        track.style.cursor = 'grabbing';
+    }
+
+
+      function onDragMove(e) {
+        if (!isDragging) return;
+        const currentX = e.type === 'mousemove' ? e.pageX : e.touches[0].pageX;
+        const deltaX = currentX - startX;
+        dragDistance = deltaX;
+        const newTranslate = startTranslate - deltaX;
+        track.style.transform = `translateX(-${newTranslate}px)`;
+    }
+
+    function onDragEnd() {
+        if (!isDragging) return;
+        isDragging = false;
+        track.style.cursor = '';
+        track.style.transition = 'transform 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1)';
+        if (Math.abs(dragDistance) > 50) {
+            if (dragDistance > 0) {
+                prevSlide();
+            } else {
+                nextSlide();
+            }
+        } else {
+            // snap back to current index
+            moveToIndex(currentIndex);
+        }
+        dragDistance = 0;
+    }
+
+
+  prevBtn.addEventListener('click', () => manualNavigate('prev'));
+  nextBtn.addEventListener('click', () => manualNavigate('next'));
+
+      // Mouse events
+    track.addEventListener('mousedown', onDragStart);
+    window.addEventListener('mousemove', onDragMove);
+    window.addEventListener('mouseup', onDragEnd);
+
+    // Touch events
+    track.addEventListener('touchstart', onDragStart);
+    window.addEventListener('touchmove', onDragMove);
+    window.addEventListener('touchend', onDragEnd);
+
+    // Initial position (first real card)
+    moveToIndex(1, false);
+
+  // Handle window resize
+  window.addEventListener('resize', () => {
+    updateCarousel();
+  });
+
+  // Optional: button click to open full story (you can link to a modal or new page)
+  document.querySelectorAll('.story-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const story = btn.getAttribute('data-story');
+      // Replace with your actual story page or modal
+      alert(`Opening story for ${story}  you can link to a detailed page.`);
+      // window.location.href = `/stories/${story}.html`;
+    });
+  });
+});
+</script>
 
      <!--Start of Tawk.to Script-->
 <script type="text/javascript">

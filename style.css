@@ -512,11 +512,6 @@ body::after {
   .hero-content p {
     font-size: 1rem;
   }
-    .nav-container {
-  padding: 0;
-  padding-right: 16px;
-}
-
   .yellow {
     font-size: 1.5rem;
   }
@@ -739,7 +734,7 @@ body::after {
 @media (max-width: 768px) {
   .about-section {
   padding: 0;
-  margin: 0;
+  margin: 10px;
   text-align: center;
 }
   .desktop {
@@ -753,7 +748,7 @@ body::after {
     padding: 1rem;
   }
   .about-section h2 {
-    font-size: 1.8rem;
+    font-size: 2rem !important;
   }
   .mission-block blockquote {
     font-size: 1.2rem;
@@ -1205,6 +1200,13 @@ body.sidebar-open {
     opacity: 0;
     animation: slideUp 0.8s ease forwards !important;
 }
+.animated-up {
+    opacity: 0;
+    animation: slideUp 0.8s ease forwards !important;
+}
+.animated-down {
+    display: none;
+}
 .delay-1 { animation-delay: 0.2s; }
 .delay-2 { animation-delay: 0.4s; }
 @keyframes slideUp {
@@ -1252,6 +1254,13 @@ body.sidebar-open {
      font-weight: 300;
 }
 @media (max-width: 768px) {
+  .animated-down {
+    display: block;
+    font-size: 2rem;
+  }
+  .animated-up {
+    display: none;
+  }
     .welcome-content p {
         font-size: 0.8rem;
     }
@@ -2711,7 +2720,7 @@ footer .logo .i-container:hover {
     color: var(--sky-blue);
 }
 
-.split-image {
+.split-image, .grow-image {
   flex: 1;
   min-width: 350px;
   text-align: center;
@@ -2720,6 +2729,14 @@ footer .logo .i-container:hover {
 
 /* Glassy image wrapper (optional – adds a subtle frosted border) */
 .split-image img {
+  width: 100%;
+  border-radius: 15px;
+  max-width: 500px;
+  object-fit: contain;
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: 500px;
+}
+.grow-image img {
   width: 100%;
   border-radius: 15px;
   max-width: 500px;
@@ -2749,6 +2766,10 @@ footer .logo .i-container:hover {
     flex: 1;
     min-width: 280px;
 }
+.grow-image {
+    flex: 1;
+    min-width: 280px;
+}
 
 /* Adjust button styles to indicate active state */
 .our-work-btn .btn-primary,
@@ -2765,6 +2786,9 @@ footer .logo .i-container:hover {
 
 /* Responsive */
 @media (max-width: 768px) {
+  .split-section {
+    margin: 10px;
+  }
   .split-section.desktop-work {
     display: none;
   }
@@ -2772,6 +2796,9 @@ footer .logo .i-container:hover {
   .split-section.mobile-work {
     display: block;
   }
+.grow-image img {
+  margin-left: 1.2rem;
+}
 
   
   .split-container {
@@ -2784,6 +2811,7 @@ footer .logo .i-container:hover {
   }
   .split-text h2 {
     justify-content: center;
+    font-size: 1.7rem;
   }
   .split-cta {
     text-align: center;
@@ -3260,6 +3288,9 @@ footer .logo .i-container:hover {
 
 /* Responsive: stack on mobile */
 @media (max-width: 768px) {
+  .impact-area-section {
+    margin: 10px;
+  }
     .impact-area-container {
         flex-direction: column !important;
         padding: 1.5rem;
@@ -3453,18 +3484,17 @@ footer .logo .i-container:hover {
 
 .insights-section h2 {
   font-size: 2.5rem;
-  background: linear-gradient(135deg, #8B4513, #C62828);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: var(--dark-blue);
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .insights-section p {
   font-size: 1rem;
   line-height: 1.5;
-  color: #2c2c2c;
+  color: var(--white);
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 /* Keep the interactive area as is – it's already glassy enough */
@@ -3548,7 +3578,7 @@ footer .logo .i-container:hover {
   line-height: 1.4;
   max-width: 280px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  z-index: 10;
+  z-index: 1000;
   white-space: normal;
   word-wrap: break-word;
   pointer-events: auto;
@@ -3624,15 +3654,18 @@ footer .logo .i-container:hover {
 /* Dot positions – keep your existing values */
 .dot:nth-child(1) { top: 22%; left: 18%; }
 .dot:nth-child(2) { top: 35%; left: 48%; }
-.dot:nth-child(3) { top: 52%; left: 28%; }
+.dot:nth-child(3) { top: 52%; left: 45%; }
 .dot:nth-child(4) { top: 68%; left: 62%; }
 .dot:nth-child(5) { top: 82%; left: 42%; }
 
 @media (max-width: 768px) {
+    .insights-section {
+    margin: 10px;
+  }
   .dot { width: 12px; height: 12px; }
-  .dot:nth-child(1) { top: 20%; left: 15%; }
+  .dot:nth-child(1) { top: 20%; left: 75%; }
   .dot:nth-child(2) { top: 32%; left: 45%; }
-  .dot:nth-child(3) { top: 48%; left: 25%; }
+  .dot:nth-child(3) { top: 48%; left: 35%; }
   .dot:nth-child(4) { top: 64%; left: 60%; }
   .dot:nth-child(5) { top: 78%; left: 40%; }
   .insights-section {
@@ -3650,171 +3683,11 @@ footer .logo .i-container:hover {
     position: relative;
 }
 
+
 /* ========== GLASSY CAROUSEL SECTION ========== */
 .carousel-header h2 {
   font-size: 2.5rem;
-  background: linear-gradient(135deg, #8B4513, #C62828);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  margin-bottom: 1rem;
-}
-
-.carousel-header p {
-  font-size: 1.5rem;
   color: var(--white);
-  max-width: 700px;
-  margin: 0 auto 2rem auto;
-}
-
-.carousel-wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 2rem;
-  padding: 1rem;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.carousel-container {
-  flex: 1;
-  overflow: hidden;
-  width: 100%;
-  border-radius: 1.5rem;
-}
-
-.carousel-track {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  will-change: transform;
-}
-
-.carousel-card {
-  flex: 0 0 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 500px;
-  border-radius: 1.5rem;
-  overflow: hidden;
-  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
-  margin: 0;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.card-overlay {
-  background: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 2rem;
-}
-
-.card-content {
-  max-width: 700px;
-  background: rgba(255, 255, 255, 0.2);
-  padding: 2rem;
-  border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  color: white;
-  transition: transform 0.3s;
-}
-
-.card-content:hover {
-  transform: scale(1.02);
-  background: rgba(255, 255, 255, 0.25);
-}
-
-.card-content h3 {
-  font-size: 2.2rem;
-  margin-bottom: 1rem;
-  background: linear-gradient(135deg, #fff, var(--sky-blue));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-.card-content p {
-  font-size: 1rem;
-  line-height: 1.5;
-  margin-bottom: 1.8rem;
-  color: white;
-}
-
-.card-btn {
-  background: rgba(118, 236, 23, 0.2);
-  color: white;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  padding: 0.8rem 1.8rem;
-  border-radius: 50px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.2s;
-  font-size: 1rem;
-}
-
-.card-btn:hover {
-  background: var(--sky-blue);
-  color: #1e3a1e;
-  transform: scale(1.03);
-  border-color: white;
-}
-
-.carousel-nav {
-  background: rgba(255, 255, 255, 0.2);
-  color: white;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  cursor: pointer;
-  font-size: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.2s;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  z-index: 2;
-  margin: 0 10px;
-}
-
-.carousel-nav:hover {
-  background: var(--sky-blue);
-  color: #1e3a1e;
-  transform: scale(1.05);
-  border-color: white;
-}
-
-/* Responsive carousel */
-@media (max-width: 768px) {
-  .carousel-card {
-    min-height: 450px;
-  }
-  .card-content {
-    padding: 1.2rem;
-  }
-  .card-content h3 {
-    font-size: 1.6rem;
-  }
-  .carousel-nav {
-    width: 40px;
-    height: 40px;
-    font-size: 1.2rem;
-  }
-}
-
-/* ========== GLASSY CAROUSEL SECTION ========== */
-.carousel-header h2 {
-  font-size: 2.5rem;
-  background: linear-gradient(135deg, #8B4513, #C62828);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
   margin-bottom: 1rem;
 }
 
@@ -3948,22 +3821,8 @@ footer .logo .i-container:hover {
   border-color: white;
 }
 
-/* Responsive carousel */
-@media (max-width: 768px) {
-  .carousel-card {
-    min-height: 450px;
-  }
-  .card-content {
-    padding: 1.2rem;
-  }
-  .card-content h3 {
-    font-size: 1.6rem;
-  }
-  .carousel-nav {
-    width: 40px;
-    height: 40px;
-    font-size: 1.2rem;
-  }
+.main {
+  margin: 5px;
 }
 
 .carousel-track {
@@ -4073,6 +3932,9 @@ footer .logo .i-container:hover {
 
 /* Responsive carousel */
 @media (max-width: 768px) {
+  .fullwidth-carousel {
+    margin: 10px;
+  }
   .carousel-card {
     min-height: 450px;
   }
@@ -4083,9 +3945,7 @@ footer .logo .i-container:hover {
     font-size: 1.6rem;
   }
   .carousel-nav {
-    width: 40px;
-    height: 40px;
-    font-size: 1.2rem;
+    display: none;
   }
 }
 
@@ -4106,10 +3966,7 @@ footer .logo .i-container:hover {
 
 .reports-header h2 {
   font-size: 2.5rem;
-  background: linear-gradient(135deg, #8B4513, #C62828);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: var(--dark-blue);
   margin-bottom: 0.5rem;
 }
 
@@ -4291,9 +4148,25 @@ footer .logo .i-container:hover {
 
 /* Responsive */
 @media (max-width: 900px) {
+  .reports-section {
+  margin: 0;
+  background: transparent;
+  border-radius: 2rem;
+  padding: 3rem 2rem;
+  border: none;
+}
+.reports-carousel-container {
+  margin: 0;
+}
   .report-card {
     flex: 0 0 calc(50% - 1rem);
   }
+  .reports-header h2 {
+  font-size: 1.5rem;
+  color: var(--white);
+  margin-bottom: 0.2rem;
+}
+
 }
 @media (max-width: 600px) {
   .report-card {
