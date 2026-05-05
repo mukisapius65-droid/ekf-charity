@@ -249,32 +249,6 @@ const observer = new IntersectionObserver((entries) => {
 meters.forEach(meter => observer.observe(meter));
 elementsToWatch.forEach(el => observer.observe(el));
 
-// ========== MODALS for ToS, PP, FAQ ==========
-const modal = document.getElementById('modal');
-const modalBody = document.getElementById('modal-body');
-
-function openModal(type) {
-    let content = '';
-    if (type === 'tos') {
-        content = `**TERMS OF SERVICE**\n\nBy using BUDDU platform you agree to:\n1. Provide accurate information.\n2. Respect fair trade practices.\n3. Payments are handled between parties.\n4. We may contact you via WhatsApp.\n5. Disputes to be resolved through local mediation.\n\nFor help: +256 700 123456`;
-    } else if (type === 'pp') {
-        content = `**PRIVACY POLICY**\n\nWe collect your name, phone, and role to facilitate connections. We never share your data with third parties. You can request deletion anytime.`;
-    } else if (type === 'faq') {
-        content = `**FREQUENTLY ASKED QUESTIONS**\n\nQ: How do I join?\nA: Click Signup and choose your role.\n\nQ: Are prices fixed?\nA: Prices shown are guidance; actual deals are between you and the other party.\n\nQ: Can I change my role?\nA: Contact support.\n\nQ: Is WhatsApp free?\nA: Yes, click the WhatsApp link to chat.`;
-    }
-    modalBody.innerText = content; // using preformat
-    modal.style.display = 'block';
-}
-
-function closeModal() {
-    modal.style.display = 'none';
-}
-
-// Close modal if clicked outside
-window.onclick = function(event) {
-    if (event.target === modal) closeModal();
-}
-
 // ========== SIGNUP FORM SUBMIT (demo) ==========
 document.getElementById('signupForm').addEventListener('submit', function(e) {
     e.preventDefault();
