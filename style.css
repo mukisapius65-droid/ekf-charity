@@ -357,8 +357,8 @@ body::after {
   }
 }
 
-.responsive-small p { font-size: 0.2rem; }
-.responsive-small h2, h2, h3, h4 { font-size: 0.5rem; }
+.responsive-small p { font-size: 0.6rem; }
+.responsive-small h2, h2, h3, h4 { font-size: 0.2rem; }
 
 /* Fixed Glassy Button */
 .fixed-glass-btn {
@@ -1433,10 +1433,7 @@ body.sidebar-open {
 }
 .price-section h2, .gallery-section h2 {    
   font-size: 2.5rem;
-  background: var(--hero-bg);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: var(--white);
   margin-bottom: 2rem;
   font-weight: 700;
   display: inline-block;
@@ -2217,6 +2214,17 @@ small {
 }
 
 /* role page */
+.role-mobile {
+  display: none;
+}
+@media (max-width: 900px) {
+.role-desktop {
+  display: none;
+}
+.role-mobile {
+  display: block;
+}
+}
 .role-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -2632,7 +2640,7 @@ body {
   transition: all 0.3s ease;
 }
 
-.split-section.mobile-work {
+.mobile-work {
   display: none;
 }
 
@@ -2765,7 +2773,7 @@ body {
   .split-section.desktop-work {
     display: none;
   }
-  .split-section.mobile-work {
+  .mobile-work {
     display: block;
   }
   .grow-image img {
