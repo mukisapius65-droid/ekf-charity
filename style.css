@@ -2631,7 +2631,7 @@ body {
 }
 /* ========== GLASSY SPLIT SECTION ========== */
 .split-section {
-  margin: 4rem 0;
+  margin: 1rem;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 2rem;
   overflow: hidden;
@@ -2781,8 +2781,8 @@ body {
   }
   .split-container {
     flex-direction: column;
-    padding: 1rem;
-    gap: 1rem;
+    padding: 10px;
+    gap: 1.5rem;
   }
   .split-text {
     text-align: center;
@@ -3287,7 +3287,7 @@ body {
     padding: 10px;
   }
   .area-text h2 {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   .area-text .lead {
     font-size: 0.8rem;
